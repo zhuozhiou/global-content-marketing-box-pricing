@@ -1,0 +1,1114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#4E5DE7">
+  <meta name="description" content="全球内容营销盒子公开定价：硬件与激活、新客体验、半年服务、一年服务、积分加油包和企业定制。">
+  <meta property="og:title" content="全球内容营销盒子｜价格与套餐">
+  <meta property="og:description" content="一个标准版本，按使用周期和积分用量选择。">
+  <meta property="og:type" content="website">
+  <title>全球内容营销盒子｜价格与套餐</title>
+  <style>
+    :root {
+      --canvas: #F6F7FB;
+      --surface: #FFFFFF;
+      --surface-soft: #F0F2F8;
+      --ink: #161A2B;
+      --muted: #667085;
+      --border: #E2E6F0;
+      --primary: #4E5DE7;
+      --primary-deep: #3544CB;
+      --primary-soft: #EEF0FF;
+      --accent: #7A5AF8;
+      --success: #16A36A;
+      --warning: #F79009;
+      --footer: #10142D;
+      --shadow: 0 18px 50px rgba(31, 38, 86, .08);
+      --radius: 22px;
+      --radius-sm: 14px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--canvas);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 50% -10%, rgba(122, 90, 248, .14), transparent 30rem),
+        var(--canvas);
+      font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .shell {
+      width: min(calc(100% - 56px), var(--max));
+      margin: 0 auto;
+    }
+
+    .nav-wrap {
+      position: sticky;
+      z-index: 30;
+      top: 0;
+      border-bottom: 1px solid rgba(226, 230, 240, .8);
+      background: rgba(255, 255, 255, .86);
+      backdrop-filter: blur(18px);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 17px;
+      font-weight: 750;
+      letter-spacing: -.02em;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      box-shadow: 0 8px 20px rgba(78, 93, 231, .24);
+    }
+
+    .brand-mark svg { width: 20px; height: 20px; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 26px;
+      color: #4C536C;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:not(.nav-cta):hover { color: var(--primary); }
+
+    .nav-cta,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 20px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: .2s ease;
+    }
+
+    .nav-cta,
+    .button.primary {
+      color: white;
+      background: var(--primary);
+      box-shadow: 0 10px 24px rgba(78, 93, 231, .22);
+    }
+
+    .nav-cta:hover,
+    .button.primary:hover {
+      background: var(--primary-deep);
+      transform: translateY(-1px);
+    }
+
+    .button.secondary {
+      border-color: var(--border);
+      color: var(--ink);
+      background: white;
+    }
+
+    .button.secondary:hover {
+      border-color: #B8C0DD;
+      background: #FAFAFD;
+    }
+
+    .hero {
+      padding: 92px 0 70px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      padding: 7px 12px;
+      border: 1px solid #DCE0FF;
+      border-radius: 999px;
+      color: var(--primary-deep);
+      background: rgba(238, 240, 255, .76);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: .02em;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 0 5px rgba(78, 93, 231, .1);
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      max-width: 900px;
+      margin-right: auto;
+      margin-bottom: 20px;
+      margin-left: auto;
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.08;
+      font-weight: 760;
+      letter-spacing: -.055em;
+    }
+
+    .gradient-text {
+      color: transparent;
+      background: linear-gradient(120deg, var(--primary-deep), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .hero-lead {
+      max-width: 740px;
+      margin: 0 auto 30px;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 20px);
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .proofs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .proof {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: #525A73;
+      background: rgba(255, 255, 255, .78);
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .section {
+      padding: 48px 0;
+    }
+
+    .section + .section { padding-top: 76px; }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 12px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.18;
+      font-weight: 740;
+      letter-spacing: -.035em;
+    }
+
+    .section-heading p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .hardware {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 28px;
+      align-items: center;
+      margin-bottom: 34px;
+      padding: 28px 32px;
+      border: 1px solid #DDE2FF;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(120deg, rgba(238, 240, 255, .95), rgba(255, 255, 255, .95)),
+        white;
+      box-shadow: var(--shadow);
+    }
+
+    .hardware-kicker {
+      margin-bottom: 6px;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .hardware h3 {
+      margin-bottom: 8px;
+      font-size: 26px;
+      line-height: 1.25;
+      letter-spacing: -.025em;
+    }
+
+    .hardware p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .hardware-price {
+      text-align: right;
+    }
+
+    .hardware-price strong {
+      display: block;
+      font-size: 42px;
+      line-height: 1;
+      letter-spacing: -.045em;
+    }
+
+    .hardware-price span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .plan-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .plan {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: 26px 24px 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .plan.recommended {
+      color: white;
+      border-color: transparent;
+      background:
+        radial-gradient(circle at 85% 4%, rgba(255, 255, 255, .22), transparent 10rem),
+        linear-gradient(145deg, var(--primary), var(--primary-deep));
+      box-shadow: 0 24px 60px rgba(53, 68, 203, .24);
+      transform: translateY(-10px);
+    }
+
+    .recommended .plan-desc,
+    .recommended .price .period,
+    .recommended .credit-label,
+    .recommended .plan-note { color: rgba(255, 255, 255, .76); }
+
+    .recommended .feature-list li::before {
+      color: white;
+      background: rgba(255, 255, 255, .18);
+    }
+
+    .recommended .button {
+      color: var(--primary-deep);
+      border-color: white;
+      background: white;
+      box-shadow: none;
+    }
+
+    .recommended .button:hover { background: #F4F5FF; }
+
+    .badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      color: var(--primary-deep);
+      background: #FFFFFF;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .plan-name {
+      margin-bottom: 4px;
+      font-size: 18px;
+      font-weight: 760;
+    }
+
+    .plan-desc {
+      min-height: 48px;
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .price {
+      display: flex;
+      align-items: flex-end;
+      gap: 5px;
+      margin-bottom: 8px;
+      line-height: 1;
+    }
+
+    .price .currency {
+      padding-bottom: 8px;
+      font-size: 17px;
+      font-weight: 750;
+    }
+
+    .price .number {
+      font-size: 48px;
+      font-weight: 780;
+      letter-spacing: -.05em;
+    }
+
+    .price .period {
+      padding-bottom: 7px;
+      color: var(--muted);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .price.contact .number {
+      font-size: 34px;
+      letter-spacing: -.035em;
+    }
+
+    .credit {
+      margin-bottom: 18px;
+      padding: 12px 13px;
+      border-radius: 12px;
+      background: var(--surface-soft);
+    }
+
+    .recommended .credit { background: rgba(255, 255, 255, .12); }
+
+    .credit strong {
+      display: block;
+      font-size: 19px;
+      line-height: 1.3;
+    }
+
+    .credit-label {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .plan .button {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 13px;
+    }
+
+    .feature-list li {
+      display: grid;
+      grid-template-columns: 20px 1fr;
+      gap: 8px;
+      align-items: start;
+      line-height: 1.48;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      width: 18px;
+      height: 18px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--success);
+      background: #EAF8F2;
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .plan-note {
+      margin-top: auto;
+      padding-top: 18px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .same-version {
+      margin-top: 28px;
+      padding: 18px 22px;
+      border: 1px solid #DDE2FF;
+      border-radius: var(--radius-sm);
+      color: #434B66;
+      background: var(--primary-soft);
+      text-align: center;
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .addon-wrap {
+      padding: 42px;
+      border-radius: 28px;
+      background: var(--surface-soft);
+    }
+
+    .addon-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .addon {
+      min-height: 220px;
+      padding: 26px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: white;
+    }
+
+    .addon-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 20px;
+      border-radius: 13px;
+      color: var(--primary);
+      background: var(--primary-soft);
+      font-size: 20px;
+    }
+
+    .addon h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .addon p {
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .addon strong {
+      color: var(--primary-deep);
+      font-size: 24px;
+      letter-spacing: -.03em;
+    }
+
+    .task-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .task-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: white;
+      box-shadow: var(--shadow);
+    }
+
+    .task-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .task-head h3 {
+      margin-bottom: 2px;
+      font-size: 21px;
+    }
+
+    .task-head p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .task-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 14px;
+      color: var(--primary);
+      background: var(--primary-soft);
+      font-size: 20px;
+    }
+
+    .task-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 20px;
+      padding: 17px 24px;
+      border-bottom: 1px solid #EDF0F6;
+    }
+
+    .task-row:last-child { border-bottom: 0; }
+
+    .task-row strong { display: block; font-size: 15px; }
+    .task-row span { color: var(--muted); font-size: 12px; }
+
+    .points {
+      color: var(--primary-deep);
+      font-size: 19px;
+      font-weight: 780;
+      white-space: nowrap;
+    }
+
+    .points small {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 650;
+    }
+
+    .estimate-note {
+      margin-top: 18px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .compare-shell {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: white;
+      box-shadow: var(--shadow);
+    }
+
+    .compare {
+      min-width: 880px;
+      display: grid;
+      grid-template-columns: 1.25fr repeat(4, 1fr);
+    }
+
+    .compare > div {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 16px;
+      border-bottom: 1px solid #EBEEF4;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .compare > div:nth-child(5n + 1) {
+      justify-content: flex-start;
+      color: #485066;
+      text-align: left;
+      font-weight: 680;
+    }
+
+    .compare .compare-head {
+      position: sticky;
+      top: 72px;
+      z-index: 2;
+      min-height: 82px;
+      color: var(--ink);
+      background: #F8F9FC;
+      font-weight: 760;
+    }
+
+    .compare .compare-head.recommend-head {
+      color: white;
+      background: var(--primary);
+    }
+
+    .compare .group {
+      grid-column: 1 / -1;
+      min-height: 44px;
+      justify-content: flex-start;
+      color: var(--primary-deep);
+      background: var(--primary-soft);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    .check { color: var(--success); font-size: 18px; font-weight: 900; }
+    .dash { color: #B4BACB; }
+
+    .faq {
+      max-width: 860px;
+      margin: 0 auto;
+      border-top: 1px solid var(--border);
+    }
+
+    details {
+      border-bottom: 1px solid var(--border);
+    }
+
+    summary {
+      position: relative;
+      padding: 22px 46px 22px 0;
+      cursor: pointer;
+      font-weight: 720;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: "+";
+      position: absolute;
+      top: 17px;
+      right: 4px;
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--primary);
+      background: var(--primary-soft);
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    details[open] summary::after { content: "−"; }
+
+    details p {
+      max-width: 760px;
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .cta-band {
+      margin-top: 90px;
+      padding: 58px 0;
+      color: white;
+      background:
+        radial-gradient(circle at 85% 0%, rgba(122, 90, 248, .35), transparent 26rem),
+        var(--footer);
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .cta-inner h2 {
+      margin-bottom: 8px;
+      font-size: clamp(26px, 4vw, 40px);
+      line-height: 1.2;
+      letter-spacing: -.035em;
+    }
+
+    .cta-inner p {
+      margin-bottom: 0;
+      color: rgba(255, 255, 255, .68);
+    }
+
+    .cta-inner .button {
+      flex: 0 0 auto;
+      color: var(--primary-deep);
+      background: white;
+    }
+
+    footer {
+      color: rgba(255, 255, 255, .58);
+      background: var(--footer);
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 24px 0 34px;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .footer-inner p { margin: 0; }
+
+    @media (max-width: 1040px) {
+      .plan-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .plan.recommended { transform: none; }
+      .addon-grid { grid-template-columns: 1fr 1fr; }
+      .addon:last-child { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 760px) {
+      .shell { width: min(calc(100% - 36px), var(--max)); }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .nav-cta { min-height: 40px; padding: 0 14px; }
+      .hero { padding: 68px 0 48px; }
+      .hero-lead { font-size: 17px; }
+      .section, .section + .section { padding: 54px 0 0; }
+      .hardware { grid-template-columns: 1fr; padding: 24px; }
+      .hardware-price { text-align: left; }
+      .plan-grid, .task-grid, .addon-grid { grid-template-columns: 1fr; }
+      .addon:last-child { grid-column: auto; }
+      .addon-wrap { padding: 22px; }
+      .plan { padding: 24px 21px; }
+      .plan-desc { min-height: 0; }
+      .cta-band { margin-top: 66px; }
+      .cta-inner, .footer-inner { align-items: flex-start; flex-direction: column; }
+      .cta-inner .button { width: 100%; }
+      .footer-inner { gap: 6px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="shell" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="全球内容营销盒子首页">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 7.5 12 4l7 3.5v9L12 20l-7-3.5v-9Z" stroke="currentColor" stroke-width="1.8"/>
+            <path d="m5.5 7.7 6.5 3.4 6.5-3.4M12 11.1V20" stroke="currentColor" stroke-width="1.8"/>
+          </svg>
+        </span>
+        <span>全球内容营销盒子</span>
+      </a>
+      <div class="nav-links">
+        <a href="#pricing">套餐</a>
+        <a href="#credits">积分规则</a>
+        <a href="#compare">详细对比</a>
+        <a href="#faq">常见问题</a>
+        <a class="nav-cta" href="#contact">了解购买方式</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="eyebrow"><span class="eyebrow-dot"></span>最新版公开计价体系</div>
+      <h1>一个标准版本，<span class="gradient-text">按周期与用量选择</span></h1>
+      <p class="hero-lead">从选题、脚本、素材到图片和视频生产，一套内容营销工作流统一按积分使用。套餐之间不拆功能，只改变积分数量与有效期。</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#pricing">查看价格</a>
+        <a class="button secondary" href="#credits">查看积分怎么用</a>
+      </div>
+      <div class="proofs" aria-label="产品特点">
+        <span class="proof">标准产品不设功能墙</span>
+        <span class="proof">积分统一覆盖多种 AI 任务</span>
+        <span class="proof">企业协作按需定制</span>
+      </div>
+    </section>
+
+    <section class="section shell" id="pricing">
+      <div class="section-heading">
+        <h2>价格透明，选择更简单</h2>
+        <p>首次购买先配置盒子，再选择体验、半年或一年服务；企业团队可直接联系销售定制。</p>
+      </div>
+
+      <article class="hardware">
+        <div>
+          <div class="hardware-kicker">一次性设备费用</div>
+          <h3>硬件与激活</h3>
+          <p>包含标准硬件、系统镜像、远程激活、基础部署和 1 次 90 分钟上线培训。后续续费服务套餐无需重复购买硬件。</p>
+        </div>
+        <div class="hardware-price">
+          <strong>¥3,999</strong>
+          <span>/ 台 · 一次性</span>
+        </div>
+      </article>
+
+      <div class="plan-grid">
+        <article class="plan" data-od-id="plan-trial">
+          <div class="plan-name">新客体验</div>
+          <p class="plan-desc">用真实任务验证工作流，仅限新客户。</p>
+          <div class="price">
+            <span class="currency">¥</span><span class="number">199</span><span class="period">/ 30 天</span>
+          </div>
+          <div class="credit">
+            <strong>20,000 积分</strong>
+            <span class="credit-label">同一客户主体、账号和设备限购一次</span>
+          </div>
+          <a class="button secondary" href="#contact">了解体验方式</a>
+          <ul class="feature-list">
+            <li>完整标准产品能力</li>
+            <li>约 1,000 张标准图片</li>
+            <li>或约 19 条 10 秒 720P 标准视频</li>
+            <li>适合首次验证真实业务</li>
+          </ul>
+          <div class="plan-note">需与硬件及激活一同购买。</div>
+        </article>
+
+        <article class="plan" data-od-id="plan-half-year">
+          <div class="plan-name">半年服务</div>
+          <p class="plan-desc">适合预算明确、以半年为运营周期的团队。</p>
+          <div class="price">
+            <span class="currency">¥</span><span class="number">3,999</span><span class="period">/ 180 天</span>
+          </div>
+          <div class="credit">
+            <strong>420,000 积分</strong>
+            <span class="credit-label">同一标准产品 · 不限续购</span>
+          </div>
+          <a class="button secondary" href="#contact">选择半年服务</a>
+          <ul class="feature-list">
+            <li>完整标准产品能力</li>
+            <li>约 21,000 张标准图片</li>
+            <li>或约 411 条 10 秒 720P 标准视频</li>
+            <li>可购买积分加油包</li>
+          </ul>
+          <div class="plan-note">首年“盒子 + 半年服务”合计 ¥7,998。</div>
+        </article>
+
+        <article class="plan recommended" data-od-id="plan-annual">
+          <span class="badge">推荐</span>
+          <div class="plan-name">一年服务</div>
+          <p class="plan-desc">单位积分价格最低，适合持续内容运营。</p>
+          <div class="price">
+            <span class="currency">¥</span><span class="number">6,999</span><span class="period">/ 365 天</span>
+          </div>
+          <div class="credit">
+            <strong>840,000 积分</strong>
+            <span class="credit-label">比半年服务续购两次节省 ¥999</span>
+          </div>
+          <a class="button" href="#contact">选择一年服务</a>
+          <ul class="feature-list">
+            <li>完整标准产品能力</li>
+            <li>约 42,000 张标准图片</li>
+            <li>或约 823 条 10 秒 720P 标准视频</li>
+            <li>可购买积分加油包</li>
+          </ul>
+          <div class="plan-note">首年“盒子 + 一年服务”合计 ¥10,998。</div>
+        </article>
+
+        <article class="plan" data-od-id="plan-enterprise">
+          <div class="plan-name">企业定制</div>
+          <p class="plan-desc">面向多团队、多品牌和复杂交付场景。</p>
+          <div class="price contact">
+            <span class="number">联系销售</span>
+          </div>
+          <div class="credit">
+            <strong>按任务量配置积分池</strong>
+            <span class="credit-label">按组织规模和交付范围报价</span>
+          </div>
+          <a class="button secondary" href="#contact">获取企业方案</a>
+          <ul class="feature-list">
+            <li>企业管理后台</li>
+            <li>团队协作与共享积分</li>
+            <li>角色权限与使用统计</li>
+            <li>接口、并发和专属服务</li>
+          </ul>
+          <div class="plan-note">硬件节点、实施与定制服务按合同配置。</div>
+        </article>
+      </div>
+
+      <div class="same-version">体验、半年和一年服务使用的是同一套标准产品能力；没有个人版、专业版或高级版功能墙。</div>
+    </section>
+
+    <section class="section shell">
+      <div class="addon-wrap">
+        <div class="section-heading">
+          <h2>灵活扩充，不打乱套餐</h2>
+          <p>积分临时不足时直接补充；需要组织能力时升级企业定制。</p>
+        </div>
+        <div class="addon-grid">
+          <article class="addon">
+            <div class="addon-icon" aria-hidden="true">＋</div>
+            <h3>积分加油包</h3>
+            <p>仅限有效套餐客户购买，最低购买 10,000 积分；积分自到账之日起有效 12 个月。</p>
+            <strong>¥1 = 100 积分</strong>
+          </article>
+          <article class="addon">
+            <div class="addon-icon" aria-hidden="true">↗</div>
+            <h3>首年推荐组合</h3>
+            <p>一次性完成硬件部署与全年服务采购，适合建立稳定内容运营节奏。</p>
+            <strong>¥10,998</strong>
+          </article>
+          <article class="addon">
+            <div class="addon-icon" aria-hidden="true">◎</div>
+            <h3>企业协作扩展</h3>
+            <p>按团队、品牌、店铺、权限、接口与服务范围配置，不把企业能力拆成多个公开版本。</p>
+            <strong>按需报价</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="credits">
+      <div class="section-heading">
+        <h2>积分能完成什么</h2>
+        <p>每次任务提交前都会显示预计积分。以下为当前公开基准，图片按张、视频按实际时长结算。</p>
+      </div>
+      <div class="task-grid">
+        <article class="task-card">
+          <header class="task-head">
+            <div>
+              <h3>图片生成</h3>
+              <p>1K 图片 · 每张计费</p>
+            </div>
+            <span class="task-icon" aria-hidden="true">▧</span>
+          </header>
+          <div class="task-row" data-od-id="row-image-fast">
+            <div><strong>快速图片</strong><span>适合预览和快速构思</span></div>
+            <div class="points">4 <small>积分/张</small></div>
+          </div>
+          <div class="task-row" data-od-id="row-image-standard">
+            <div><strong>标准图片</strong><span>默认展示口径</span></div>
+            <div class="points">20 <small>积分/张</small></div>
+          </div>
+          <div class="task-row" data-od-id="row-image-high">
+            <div><strong>高清图片</strong><span>适合高质量成片</span></div>
+            <div class="points">80 <small>积分/张</small></div>
+          </div>
+        </article>
+
+        <article class="task-card">
+          <header class="task-head">
+            <div>
+              <h3>视频生成</h3>
+              <p>720P · 以 10 秒为示例</p>
+            </div>
+            <span class="task-icon" aria-hidden="true">▶</span>
+          </header>
+          <div class="task-row" data-od-id="row-video-lite">
+            <div><strong>轻量视频</strong><span>适合批量测试创意</span></div>
+            <div class="points">630 <small>积分/10秒</small></div>
+          </div>
+          <div class="task-row" data-od-id="row-video-standard">
+            <div><strong>标准视频</strong><span>默认展示口径</span></div>
+            <div class="points">1,020 <small>积分/10秒</small></div>
+          </div>
+          <div class="task-row" data-od-id="row-video-high">
+            <div><strong>高质视频</strong><span>适合重点内容成片</span></div>
+            <div class="points">1,270 <small>积分/10秒</small></div>
+          </div>
+        </article>
+      </div>
+      <p class="estimate-note">带参考图、多图输入、视频延长或更高规格的任务，提交前会根据实际参数重新显示预计积分。</p>
+    </section>
+
+    <section class="section shell" id="compare">
+      <div class="section-heading">
+        <h2>购买方案详细对比</h2>
+        <p>所有标准服务套餐功能一致，差异集中在积分、有效期和购买条件。</p>
+      </div>
+      <div class="compare-shell" role="region" aria-label="套餐详细对比" tabindex="0">
+        <div class="compare">
+          <div class="compare-head">比较项目</div>
+          <div class="compare-head">新客体验</div>
+          <div class="compare-head">半年服务</div>
+          <div class="compare-head recommend-head">一年服务 · 推荐</div>
+          <div class="compare-head">企业定制</div>
+
+          <div class="group">价格与额度</div>
+          <div data-od-id="compare-price">服务价格</div><div>¥199</div><div>¥3,999</div><div>¥6,999</div><div>按需报价</div>
+          <div data-od-id="compare-credit">积分额度</div><div>20,000</div><div>420,000</div><div>840,000</div><div>按任务量配置</div>
+          <div data-od-id="compare-validity">有效期</div><div>30 天</div><div>180 天</div><div>365 天</div><div>按合同</div>
+          <div data-od-id="compare-first-year">含 1 台盒子的首年合计</div><div>¥4,198</div><div>¥7,998</div><div>¥10,998</div><div>按配置报价</div>
+
+          <div class="group">使用规则</div>
+          <div data-od-id="compare-standard-product">完整标准产品能力</div><div class="check">✓</div><div class="check">✓</div><div class="check">✓</div><div class="check">✓</div>
+          <div data-od-id="compare-buy-rule">购买限制</div><div>仅新客一次</div><div>不限续购</div><div>不限续购</div><div>按合同</div>
+          <div data-od-id="compare-addon">积分加油包</div><div class="dash">—</div><div class="check">✓</div><div class="check">✓</div><div>按积分池配置</div>
+          <div data-od-id="compare-team">团队后台与权限</div><div class="dash">—</div><div class="dash">—</div><div class="dash">—</div><div class="check">✓</div>
+
+          <div class="group">理论任务上限</div>
+          <div data-od-id="compare-images">标准图片 · 20积分/张</div><div>约 1,000 张</div><div>约 21,000 张</div><div>约 42,000 张</div><div>按积分池计算</div>
+          <div data-od-id="compare-videos">标准视频 · 720P/10秒</div><div>约 19 条</div><div>约 411 条</div><div>约 823 条</div><div>按积分池计算</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="faq">
+      <div class="section-heading">
+        <h2>常见问题</h2>
+        <p>关于版本、积分、续费和企业使用的核心说明。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>体验、半年和一年套餐的功能不同吗？</summary>
+          <p>不同周期使用的是同一套标准产品能力。差异只在积分数量、有效期和购买规则，不会通过功能墙迫使客户升级。</p>
+        </details>
+        <details>
+          <summary>首次购买为什么还需要硬件与激活？</summary>
+          <p>全球内容营销盒子包含本地硬件、系统镜像、远程激活、基础部署和上线培训。硬件为一次性购买，后续续费服务套餐不需要重复采购。</p>
+        </details>
+        <details>
+          <summary>积分不够了怎么办？</summary>
+          <p>半年、一年及有效企业套餐客户可以购买积分加油包，固定为 ¥1=100 积分，最低购买 10,000 积分，加油包积分自到账之日起有效 12 个月。</p>
+        </details>
+        <details>
+          <summary>图片和视频的“约可生成数量”是承诺吗？</summary>
+          <p>表格展示的是全部积分只用于同一种任务时的理论上限。实际消耗会因图片质量、参考图数量、视频规格、时长和具体工作流而变化，提交任务前会显示预计积分。</p>
+        </details>
+        <details>
+          <summary>企业定制版增加了什么？</summary>
+          <p>企业定制主要解决组织复杂度，包括企业后台、成员与角色权限、共享积分、统计、接口、并发、SLA 以及实施服务，并按团队规模和交付范围报价。</p>
+        </details>
+        <details>
+          <summary>底层 AI 服务价格变化会影响套餐价格吗？</summary>
+          <p>公开套餐价格和套餐积分总量保持稳定；具体任务所需积分以页面和产品内最新公示为准。已经提交的任务按照提交时确认的积分执行。</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta-band" id="contact">
+      <div class="cta-inner shell">
+        <div>
+          <h2>选好周期，开始稳定生产内容</h2>
+          <p>购买链接、设备配置和企业方案由项目顾问统一提供。</p>
+        </div>
+        <a class="button" href="#pricing">返回选择套餐</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner shell">
+      <p>© 2026 全球内容营销盒子</p>
+      <p>价格与积分更新于 2026-07-28 · 最终以购买页面和合同为准</p>
+    </div>
+  </footer>
+</body>
+</html>
