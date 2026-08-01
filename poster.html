@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>全球内容营销盒子｜明码标价商品图</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 1080px; height: 1350px; margin: 0; overflow: hidden; }
+    body {
+      font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      color: #15182a;
+      background: #eef0ff;
+      -webkit-font-smoothing: antialiased;
+    }
+    .poster {
+      position: relative;
+      width: 1080px;
+      height: 1350px;
+      overflow: hidden;
+      background: #f5f6ff url("assets/pricing-poster-background-20260802.png") center/cover no-repeat;
+    }
+    .poster::after {
+      content: "";
+      position: absolute;
+      inset: 520px 0 0;
+      background: linear-gradient(180deg, rgba(245,246,255,.15), rgba(245,246,255,.96) 18%, #f5f6ff 55%);
+      pointer-events: none;
+    }
+    .top, .product, .price-anchor, .plans, .addon, .foot { position: absolute; z-index: 2; }
+    .top { top: 46px; left: 64px; right: 64px; }
+    .brand-row { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 13px; font-size: 24px; font-weight: 800; letter-spacing: -.02em; }
+    .mark {
+      width: 44px; height: 44px; display: grid; place-items: center;
+      border-radius: 13px; color: white; background: linear-gradient(135deg,#4e5de7,#7a5af8);
+      box-shadow: 0 10px 26px rgba(78,93,231,.28);
+    }
+    .mark svg { width: 26px; height: 26px; }
+    .latest {
+      padding: 8px 16px; border: 1px solid rgba(78,93,231,.18); border-radius: 999px;
+      color: #3544cb; background: rgba(255,255,255,.76); font-size: 16px; font-weight: 750;
+    }
+    h1 { margin: 26px 0 7px; font-size: 54px; line-height: 1.08; letter-spacing: -.045em; }
+    .lead { margin: 0; color: #5f6680; font-size: 22px; font-weight: 550; }
+    .product {
+      top: 205px; right: 14px; width: 760px; height: 500px;
+      display: flex; align-items: center; justify-content: center;
+      filter: drop-shadow(0 34px 36px rgba(54,64,128,.20));
+    }
+    .product img { width: 100%; height: 100%; object-fit: contain; }
+    .price-anchor {
+      top: 300px; left: 62px; width: 340px; padding: 22px 24px 21px;
+      border: 1px solid rgba(255,255,255,.9); border-radius: 24px;
+      background: rgba(255,255,255,.86); box-shadow: 0 22px 50px rgba(45,53,110,.14);
+      backdrop-filter: blur(16px);
+    }
+    .anchor-label { color: #4e5de7; font-size: 17px; font-weight: 800; }
+    .anchor-price { display: flex; align-items: baseline; gap: 6px; margin: 3px 0 5px; }
+    .anchor-price b { font-size: 56px; line-height: 1; letter-spacing: -.055em; }
+    .anchor-price span { color: #626982; font-size: 18px; }
+    .anchor-desc { color: #666d83; font-size: 15px; line-height: 1.5; }
+    .plans { top: 628px; left: 64px; right: 64px; }
+    .plans-title { display: flex; align-items: end; justify-content: space-between; margin-bottom: 17px; }
+    .plans-title h2 { margin: 0; font-size: 31px; letter-spacing: -.03em; }
+    .plans-title p { margin: 0 0 3px; color: #6b7188; font-size: 15px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .card {
+      position: relative; height: 216px; padding: 22px 24px; overflow: hidden;
+      border: 1px solid rgba(216,221,239,.96); border-radius: 22px;
+      background: rgba(255,255,255,.95); box-shadow: 0 16px 38px rgba(45,53,110,.09);
+    }
+    .card.recommended {
+      color: white; border-color: transparent;
+      background: radial-gradient(circle at 90% 0, rgba(255,255,255,.22), transparent 180px), linear-gradient(135deg,#5362ec,#3949d1);
+      box-shadow: 0 20px 44px rgba(53,68,203,.24);
+    }
+    .card-top { display: flex; justify-content: space-between; align-items: center; }
+    .name { font-size: 23px; font-weight: 800; }
+    .tag { padding: 5px 11px; border-radius: 999px; color: #3544cb; background: #eef0ff; font-size: 13px; font-weight: 800; }
+    .recommended .tag { color: #3544cb; background: white; }
+    .price { display: flex; align-items: baseline; gap: 5px; margin: 10px 0 8px; }
+    .price b { font-size: 48px; line-height: 1; letter-spacing: -.05em; }
+    .price span { color: #777d92; font-size: 16px; }
+    .recommended .price span { color: rgba(255,255,255,.75); }
+    .contact b { font-size: 39px; letter-spacing: -.03em; }
+    .credit { font-size: 19px; font-weight: 760; }
+    .rule { margin-top: 5px; color: #6c7288; font-size: 14px; }
+    .recommended .rule { color: rgba(255,255,255,.74); }
+    .addon {
+      left: 64px; right: 64px; bottom: 78px; height: 112px; display: grid;
+      grid-template-columns: 1.05fr 1fr 1.15fr; align-items: center;
+      padding: 0 28px; border: 1px solid #dfe3f3; border-radius: 22px;
+      background: rgba(255,255,255,.94); box-shadow: 0 16px 40px rgba(45,53,110,.09);
+    }
+    .addon > div { padding: 0 24px; border-right: 1px solid #e4e7f2; }
+    .addon > div:first-child { padding-left: 0; }
+    .addon > div:last-child { padding-right: 0; border-right: 0; }
+    .addon small { display: block; color: #71778d; font-size: 13px; font-weight: 650; }
+    .addon strong { display: block; margin-top: 2px; color: #3544cb; font-size: 23px; letter-spacing: -.02em; }
+    .foot { left: 64px; right: 64px; bottom: 29px; display: flex; justify-content: space-between; color: #777d91; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <main class="poster" id="poster">
+    <header class="top">
+      <div class="brand-row">
+        <div class="brand">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 7.5 12 4l7 3.5v9L12 20l-7-3.5v-9Z" stroke="currentColor" stroke-width="1.8"/><path d="m5.5 7.7 6.5 3.4 6.5-3.4M12 11.1V20" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          全球内容营销盒子
+        </div>
+        <span class="latest">2026 最新公开价</span>
+      </div>
+      <h1>一台盒子，一套内容工作流</h1>
+      <p class="lead">硬件买断 + 积分服务 · 明码标价 · 不设功能墙</p>
+    </header>
+
+    <div class="product"><img src="assets/content-box-device.png" alt="全球内容营销盒子硬件"></div>
+
+    <section class="price-anchor">
+      <div class="anchor-label">硬件与激活</div>
+      <div class="anchor-price"><b>¥3,999</b><span>/ 台</span></div>
+      <div class="anchor-desc">标准硬件、系统镜像、远程激活、基础部署与上线培训</div>
+    </section>
+
+    <section class="plans">
+      <div class="plans-title">
+        <h2>服务套餐</h2>
+        <p>体验、半年和一年均为同一套标准产品能力</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-top"><span class="name">新客体验</span><span class="tag">限购一次</span></div>
+          <div class="price"><b>¥199</b><span>/ 30天</span></div>
+          <div class="credit">20,000 积分</div>
+          <div class="rule">仅限新客户 · 适合真实业务验证</div>
+        </article>
+        <article class="card">
+          <div class="card-top"><span class="name">半年套餐</span></div>
+          <div class="price"><b>¥3,999</b><span>/ 180天</span></div>
+          <div class="credit">420,000 积分</div>
+          <div class="rule">不限续购 · 可购买积分加油包</div>
+        </article>
+        <article class="card recommended">
+          <div class="card-top"><span class="name">一年套餐</span><span class="tag">推荐</span></div>
+          <div class="price"><b>¥6,999</b><span>/ 365天</span></div>
+          <div class="credit">840,000 积分</div>
+          <div class="rule">比半年续购两次省 ¥999 · 单积分价格最低</div>
+        </article>
+        <article class="card">
+          <div class="card-top"><span class="name">企业定制</span></div>
+          <div class="price contact"><b>联系销售</b></div>
+          <div class="credit">企业后台 · 团队协作 · 共享积分</div>
+          <div class="rule">按组织规模、接口和交付范围报价</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="addon">
+      <div><small>积分加油包</small><strong>¥1 = 100积分</strong></div>
+      <div><small>标准图片</small><strong>20积分 / 张</strong></div>
+      <div><small>标准视频 · 720P</small><strong>1,020积分 / 10秒</strong></div>
+    </section>
+
+    <footer class="foot">
+      <span>首次购买需配置硬件；后续续费无需重复购买硬件</span>
+      <span>价格与积分以最新购买页面及合同为准</span>
+    </footer>
+  </main>
+</body>
+</html>

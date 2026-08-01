@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="lowerWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5f6ff" stop-opacity="0.18"/>
+      <stop offset="0.16" stop-color="#f5f6ff" stop-opacity="0.97"/>
+      <stop offset="1" stop-color="#f5f6ff"/>
+    </linearGradient>
+    <linearGradient id="annual" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5f6df0"/>
+      <stop offset="1" stop-color="#3949d1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#2d356e" flood-opacity="0.12"/>
+    </filter>
+    <filter id="productShadow" x="-20%" y="-20%" width="150%" height="170%">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#364080" flood-opacity="0.22"/>
+    </filter>
+    <style>
+      text { font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; fill: #15182a; }
+      .muted { fill: #666d83; }
+      .blue { fill: #4050dc; }
+      .white { fill: #fff; }
+      .softwhite { fill: #fff; fill-opacity: 0.78; }
+      .label { font-size: 17px; font-weight: 700; }
+      .small { font-size: 14px; }
+      .tiny { font-size: 12px; }
+      .name { font-size: 23px; font-weight: 700; }
+      .credit { font-size: 19px; font-weight: 700; }
+      .price { font-size: 48px; font-weight: 800; letter-spacing: -2px; }
+    </style>
+  </defs>
+
+  <image href="assets/pricing-poster-background-20260802.png" x="0" y="0" width="1080" height="1350" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="0" y="515" width="1080" height="835" fill="url(#lowerWash)"/>
+
+  <g transform="translate(64 48)">
+    <rect x="0" y="0" width="44" height="44" rx="13" fill="#5b5fe8"/>
+    <path d="M12 14.5 22 9.5l10 5v15l-10 5-10-5zM12.8 14.8 22 19.6l9.2-4.8M22 19.6v14.9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/>
+    <text x="58" y="31" font-size="24" font-weight="800">全球内容营销盒子</text>
+  </g>
+  <rect x="844" y="50" width="172" height="38" rx="19" fill="#fff" fill-opacity="0.82" stroke="#dfe2f7"/>
+  <text x="930" y="75" text-anchor="middle" font-size="15" font-weight="700" class="blue">2026 最新公开价</text>
+
+  <text x="64" y="164" font-size="54" font-weight="800" letter-spacing="-2">一台盒子，一套内容工作流</text>
+  <text x="64" y="203" font-size="21" font-weight="600" fill="#5f6680">硬件买断 + 积分服务 · 明码标价 · 不设功能墙</text>
+
+  <g>
+    <rect x="62" y="300" width="340" height="176" rx="24" fill="#fff" fill-opacity="0.92" stroke="#fff"/>
+  </g>
+  <text x="86" y="339" class="label blue">硬件与激活</text>
+  <text x="84" y="399" font-size="56" font-weight="800" letter-spacing="-2">¥3,999</text>
+  <text x="286" y="399" font-size="18" class="muted">/ 台</text>
+  <text x="86" y="431" font-size="15" class="muted">标准硬件、系统镜像、远程激活、基础部署</text>
+  <text x="86" y="455" font-size="15" class="muted">与上线培训</text>
+
+  <image href="assets/content-box-device.png" x="330" y="205" width="720" height="480" preserveAspectRatio="xMidYMid meet"/>
+
+  <text x="64" y="663" font-size="31" font-weight="800">服务套餐</text>
+  <text x="1016" y="661" text-anchor="end" font-size="14" class="muted">体验、半年和一年均为同一套标准产品能力</text>
+
+  <g>
+    <rect x="64" y="690" width="467" height="214" rx="22" fill="#fff" fill-opacity="0.96" stroke="#d8ddef"/>
+    <rect x="549" y="690" width="467" height="214" rx="22" fill="#fff" fill-opacity="0.96" stroke="#d8ddef"/>
+    <rect x="64" y="922" width="467" height="214" rx="22" fill="url(#annual)"/>
+    <rect x="549" y="922" width="467" height="214" rx="22" fill="#fff" fill-opacity="0.96" stroke="#d8ddef"/>
+  </g>
+
+  <text x="88" y="730" class="name">新客体验</text>
+  <rect x="431" y="711" width="76" height="29" rx="14.5" fill="#eef0ff"/>
+  <text x="469" y="731" text-anchor="middle" font-size="13" font-weight="700" class="blue">限购一次</text>
+  <text x="88" y="792" class="price">¥199</text>
+  <text x="206" y="792" font-size="16" class="muted">/ 30天</text>
+  <text x="88" y="831" class="credit">20,000 积分</text>
+  <text x="88" y="865" class="small muted">仅限新客户 · 适合真实业务验证</text>
+
+  <text x="573" y="730" class="name">半年套餐</text>
+  <text x="573" y="792" class="price">¥3,999</text>
+  <text x="745" y="792" font-size="16" class="muted">/ 180天</text>
+  <text x="573" y="831" class="credit">420,000 积分</text>
+  <text x="573" y="865" class="small muted">不限续购 · 可购买积分加油包</text>
+
+  <text x="88" y="962" class="name white">一年套餐</text>
+  <rect x="452" y="943" width="55" height="29" rx="14.5" fill="#fff"/>
+  <text x="479.5" y="963" text-anchor="middle" font-size="13" font-weight="700" class="blue">推荐</text>
+  <text x="88" y="1024" class="price white">¥6,999</text>
+  <text x="260" y="1024" font-size="16" class="softwhite">/ 365天</text>
+  <text x="88" y="1063" class="credit white">840,000 积分</text>
+  <text x="88" y="1097" class="small softwhite">比半年续购两次省 ¥999 · 单积分价格最低</text>
+
+  <text x="573" y="962" class="name">企业定制</text>
+  <text x="573" y="1023" font-size="39" font-weight="800">联系销售</text>
+  <text x="573" y="1063" class="credit">企业后台 · 团队协作 · 共享积分</text>
+  <text x="573" y="1097" class="small muted">按组织规模、接口和交付范围报价</text>
+
+  <g>
+    <rect x="64" y="1160" width="952" height="112" rx="22" fill="#fff" fill-opacity="0.96" stroke="#dfe3f3"/>
+  </g>
+  <line x1="382" y1="1183" x2="382" y2="1249" stroke="#e4e7f2"/>
+  <line x1="679" y1="1183" x2="679" y2="1249" stroke="#e4e7f2"/>
+  <text x="88" y="1201" class="tiny muted">积分加油包</text>
+  <text x="88" y="1237" font-size="23" font-weight="800" class="blue">¥1 = 100积分</text>
+  <text x="406" y="1201" class="tiny muted">标准图片</text>
+  <text x="406" y="1237" font-size="23" font-weight="800" class="blue">20积分 / 张</text>
+  <text x="703" y="1201" class="tiny muted">标准视频 · 720P</text>
+  <text x="703" y="1237" font-size="23" font-weight="800" class="blue">1,020积分 / 10秒</text>
+
+  <text x="64" y="1317" class="tiny muted">首次购买需配置硬件；后续续费无需重复购买硬件</text>
+  <text x="1016" y="1317" text-anchor="end" class="tiny muted">价格与积分以最新购买页面及合同为准</text>
+</svg>
