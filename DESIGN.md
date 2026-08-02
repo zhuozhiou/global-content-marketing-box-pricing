@@ -41,8 +41,8 @@
 - Navigation: white translucent surface, compact wordmark, restrained links.
 - Hero: centered title, short explanation, three proof chips.
 - Pricing cards: white cards, one purple recommended card, clear price and credit amount.
-- Hardware strip: a bordered two-column callout before subscription cards.
-- Add-on cards: soft gray section with two compact cards.
+- Pricing cards: exactly three cards—trial, personal, enterprise. No standalone hardware package or hidden fourth tier.
+- Add-on cards: point top-up and channel incentives are rules, not additional packages.
 - Task cost table: customer-readable task names only; no channel or cost data.
 - Comparison table: compares purchase terms rather than artificial feature tiers.
 - FAQ: native `details/summary`.
@@ -50,8 +50,9 @@
 
 ## UX rules
 
-- The annual plan is the only visually dominant plan.
-- “套餐不是功能版本” must be explicit.
+- The personal plan is the only visually dominant plan.
+- “目前有且只有三个套餐” must be explicit.
+- Trial is not tied to hardware; personal does not imply hardware; enterprise explicitly includes gifted hardware.
 - Internal costs, suppliers, margins, token pricing and model route names must never appear.
 - Every output estimate includes image quality or video resolution and duration.
 - Mobile pricing cards stack; comparison table scrolls horizontally.

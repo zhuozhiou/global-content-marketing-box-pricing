@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#4E5DE7">
-  <meta name="description" content="全球内容营销盒子公开定价：硬件与激活、新客体验、半年服务、一年服务、积分加油包和企业定制。">
+  <meta name="description" content="全球内容营销盒子公开定价：体验包、个人版和企业版三个套餐，以及积分增值与渠道合作规则。">
   <meta property="og:title" content="全球内容营销盒子｜价格与套餐">
-  <meta property="og:description" content="一个标准版本，按使用周期和积分用量选择。">
+  <meta property="og:description" content="目前有且只有体验包、个人版和企业版三个套餐。">
   <meta property="og:type" content="website">
   <title>全球内容营销盒子｜价格与套餐</title>
   <style>
@@ -307,7 +307,7 @@
 
     .plan-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
       align-items: stretch;
     }
@@ -625,7 +625,7 @@
     .compare {
       min-width: 880px;
       display: grid;
-      grid-template-columns: 1.25fr repeat(4, 1fr);
+      grid-template-columns: 1.25fr repeat(3, 1fr);
     }
 
     .compare > div {
@@ -639,7 +639,7 @@
       font-size: 13px;
     }
 
-    .compare > div:nth-child(5n + 1) {
+    .compare > div[data-od-id] {
       justify-content: flex-start;
       color: #485066;
       text-align: left;
@@ -829,147 +829,115 @@
   <main id="top">
     <section class="hero shell">
       <div class="eyebrow"><span class="eyebrow-dot"></span>最新版公开计价体系</div>
-      <h1>一个标准版本，<span class="gradient-text">按周期与用量选择</span></h1>
-      <p class="hero-lead">从选题、脚本、素材到图片和视频生产，一套内容营销工作流统一按积分使用。套餐之间不拆功能，只改变积分数量与有效期。</p>
+      <h1>三个套餐，<span class="gradient-text">按使用阶段选择</span></h1>
+      <p class="hero-lead">目前有且只有体验包、个人版和企业版三个套餐。图片、视频与内容工作流统一按积分使用，积分不足时再按规则增值。</p>
       <div class="hero-actions">
         <a class="button primary" href="#pricing">查看价格</a>
         <a class="button secondary" href="#credits">查看积分怎么用</a>
       </div>
       <div class="proofs" aria-label="产品特点">
-        <span class="proof">标准产品不设功能墙</span>
-        <span class="proof">积分统一覆盖多种 AI 任务</span>
-        <span class="proof">企业协作按需定制</span>
+        <span class="proof">体验包不与硬件绑定</span>
+        <span class="proof">个人版包含一年许可证</span>
+        <span class="proof">企业版包含硬件与团队能力</span>
       </div>
     </section>
 
     <section class="section shell" id="pricing">
       <div class="section-heading">
         <h2>价格透明，选择更简单</h2>
-        <p>首次购买先配置盒子，再选择体验、半年或一年服务；企业团队可直接联系销售定制。</p>
+        <p>体验包用于低门槛验证，个人版用于持续生产，企业版一次配齐年度积分、许可证、硬件和团队协作能力。</p>
       </div>
-
-      <article class="hardware">
-        <div>
-          <div class="hardware-kicker">一次性设备费用</div>
-          <h3>硬件与激活</h3>
-          <p>包含标准硬件、系统镜像、远程激活、基础部署和 1 次 90 分钟上线培训。后续续费服务套餐无需重复购买硬件。</p>
-        </div>
-        <div class="hardware-price">
-          <strong>¥3,999</strong>
-          <span>/ 台 · 一次性</span>
-        </div>
-      </article>
 
       <div class="plan-grid">
         <article class="plan" data-od-id="plan-trial">
-          <div class="plan-name">新客体验</div>
-          <p class="plan-desc">用真实任务验证工作流，仅限新客户。</p>
+          <div class="plan-name">体验包</div>
+          <p class="plan-desc">30 天内用真实任务验证完整内容工作流。</p>
           <div class="price">
-            <span class="currency">¥</span><span class="number">199</span><span class="period">/ 30 天</span>
+            <span class="currency">¥</span><span class="number">68</span><span class="period">/ 30 天</span>
           </div>
           <div class="credit">
-            <strong>20,000 积分</strong>
-            <span class="credit-label">同一客户主体、账号和设备限购一次</span>
+            <strong>5,000 积分</strong>
+            <span class="credit-label">30 天试用期 · 不与硬件绑定</span>
           </div>
-          <a class="button secondary" href="#contact">了解体验方式</a>
+          <a class="button secondary" href="#contact">购买体验包</a>
           <ul class="feature-list">
-            <li>完整标准产品能力</li>
-            <li>约 1,000 张标准图片</li>
-            <li>或约 19 条 10 秒 720P 标准视频</li>
-            <li>适合首次验证真实业务</li>
+            <li>5,000 平台积分</li>
+            <li>30 天试用有效期</li>
+            <li>无需先购买硬件</li>
+            <li>适合首次验证真实业务流程</li>
           </ul>
-          <div class="plan-note">需与硬件及激活一同购买。</div>
+          <div class="plan-note">体验包独立购买，不和硬件绑定。</div>
         </article>
 
-        <article class="plan" data-od-id="plan-half-year">
-          <div class="plan-name">半年服务</div>
-          <p class="plan-desc">适合预算明确、以半年为运营周期的团队。</p>
+        <article class="plan recommended" data-od-id="plan-personal">
+          <span class="badge">常用</span>
+          <div class="plan-name">个人版</div>
+          <p class="plan-desc">适合个人创作者和一人公司持续生产内容。</p>
           <div class="price">
-            <span class="currency">¥</span><span class="number">3,999</span><span class="period">/ 180 天</span>
+            <span class="currency">¥</span><span class="number">3,000</span><span class="period">/ 年</span>
           </div>
           <div class="credit">
-            <strong>420,000 积分</strong>
-            <span class="credit-label">同一标准产品 · 不限续购</span>
+            <strong>200,000 积分</strong>
+            <span class="credit-label">包含 1 年软件许可证</span>
           </div>
-          <a class="button secondary" href="#contact">选择半年服务</a>
+          <a class="button" href="#contact">购买个人版</a>
           <ul class="feature-list">
-            <li>完整标准产品能力</li>
-            <li>约 21,000 张标准图片</li>
-            <li>或约 411 条 10 秒 720P 标准视频</li>
-            <li>可购买积分加油包</li>
+            <li>200,000 年度平台积分</li>
+            <li>1 年软件许可证</li>
+            <li>图片、视频和内容工作流</li>
+            <li>积分不足后按 ¥1=100 积分增值</li>
           </ul>
-          <div class="plan-note">首年“盒子 + 半年服务”合计 ¥7,998。</div>
-        </article>
-
-        <article class="plan recommended" data-od-id="plan-annual">
-          <span class="badge">推荐</span>
-          <div class="plan-name">一年服务</div>
-          <p class="plan-desc">单位积分价格最低，适合持续内容运营。</p>
-          <div class="price">
-            <span class="currency">¥</span><span class="number">6,999</span><span class="period">/ 365 天</span>
-          </div>
-          <div class="credit">
-            <strong>840,000 积分</strong>
-            <span class="credit-label">比半年服务续购两次节省 ¥999</span>
-          </div>
-          <a class="button" href="#contact">选择一年服务</a>
-          <ul class="feature-list">
-            <li>完整标准产品能力</li>
-            <li>约 42,000 张标准图片</li>
-            <li>或约 823 条 10 秒 720P 标准视频</li>
-            <li>可购买积分加油包</li>
-          </ul>
-          <div class="plan-note">首年“盒子 + 一年服务”合计 ¥10,998。</div>
+          <div class="plan-note">个人版不包含硬件；后续按需充值积分。</div>
         </article>
 
         <article class="plan" data-od-id="plan-enterprise">
-          <div class="plan-name">企业定制</div>
-          <p class="plan-desc">面向多团队、多品牌和复杂交付场景。</p>
-          <div class="price contact">
-            <span class="number">联系销售</span>
+          <div class="plan-name">企业版</div>
+          <p class="plan-desc">面向团队、品牌和需要统一管理的企业客户。</p>
+          <div class="price">
+            <span class="currency">¥</span><span class="number">29,800</span><span class="period">/ 年</span>
           </div>
           <div class="credit">
-            <strong>按任务量配置积分池</strong>
-            <span class="credit-label">按组织规模和交付范围报价</span>
+            <strong>2,980,000 积分</strong>
+            <span class="credit-label">赠 1 年许可证年费和硬件</span>
           </div>
-          <a class="button secondary" href="#contact">获取企业方案</a>
+          <a class="button secondary" href="#contact">购买企业版</a>
           <ul class="feature-list">
-            <li>企业管理后台</li>
-            <li>团队协作与共享积分</li>
-            <li>角色权限与使用统计</li>
-            <li>接口、并发和专属服务</li>
+            <li>2,980,000 企业共享积分</li>
+            <li>赠送 1 年软件许可证年费</li>
+            <li>赠送全球内容营销盒子硬件</li>
+            <li>企业后台、团队协作与使用统计</li>
           </ul>
-          <div class="plan-note">硬件节点、实施与定制服务按合同配置。</div>
+          <div class="plan-note">固定年度服务套餐，按已列权益交付。</div>
         </article>
       </div>
 
-      <div class="same-version">体验、半年和一年服务使用的是同一套标准产品能力；没有个人版、专业版或高级版功能墙。</div>
+      <div class="same-version">目前有且只有体验包、个人版和企业版三个套餐；积分增值和渠道分成是配套规则，不是额外套餐。</div>
     </section>
 
     <section class="section shell">
       <div class="addon-wrap">
         <div class="section-heading">
-          <h2>灵活扩充，不打乱套餐</h2>
-          <p>积分临时不足时直接补充；需要组织能力时升级企业定制。</p>
+          <h2>积分增值与渠道合作</h2>
+          <p>以下是三个套餐之外的使用和合作规则，不新增任何套餐档位。</p>
         </div>
         <div class="addon-grid">
           <article class="addon">
             <div class="addon-icon" aria-hidden="true">＋</div>
-            <h3>积分加油包</h3>
-            <p>仅限有效套餐客户购买，最低购买 10,000 积分；积分自到账之日起有效 12 个月。</p>
+            <h3>个人版积分增值</h3>
+            <p>个人版套餐内的 20 万积分不足后，用户可以按需继续购买积分。</p>
             <strong>¥1 = 100 积分</strong>
           </article>
           <article class="addon">
             <div class="addon-icon" aria-hidden="true">↗</div>
-            <h3>首年推荐组合</h3>
-            <p>一次性完成硬件部署与全年服务采购，适合建立稳定内容运营节奏。</p>
-            <strong>¥10,998</strong>
+            <h3>渠道销售满 5 万元</h3>
+            <p>达到资格后，其拓展用户后续充值积分，渠道可以参与分成。</p>
+            <strong>10% 分成资格</strong>
           </article>
           <article class="addon">
             <div class="addon-icon" aria-hidden="true">◎</div>
-            <h3>企业协作扩展</h3>
-            <p>按团队、品牌、店铺、权限、接口与服务范围配置，不把企业能力拆成多个公开版本。</p>
-            <strong>按需报价</strong>
+            <h3>渠道销售满 20 万元</h3>
+            <p>达到资格后，其拓展用户后续充值积分，渠道可以参与分成。</p>
+            <strong>20% 分成资格</strong>
           </article>
         </div>
       </div>
@@ -1013,15 +981,15 @@
           </header>
           <div class="task-row" data-od-id="row-video-lite">
             <div><strong>轻量视频</strong><span>适合批量测试创意</span></div>
-            <div class="points">630 <small>积分/10秒</small></div>
+            <div class="points">530 <small>积分/10秒</small></div>
           </div>
           <div class="task-row" data-od-id="row-video-standard">
             <div><strong>标准视频</strong><span>默认展示口径</span></div>
-            <div class="points">1,020 <small>积分/10秒</small></div>
+            <div class="points">850 <small>积分/10秒</small></div>
           </div>
           <div class="task-row" data-od-id="row-video-high">
             <div><strong>高质视频</strong><span>适合重点内容成片</span></div>
-            <div class="points">1,270 <small>积分/10秒</small></div>
+            <div class="points">1,060 <small>积分/10秒</small></div>
           </div>
         </article>
       </div>
@@ -1031,31 +999,29 @@
     <section class="section shell" id="compare">
       <div class="section-heading">
         <h2>购买方案详细对比</h2>
-        <p>所有标准服务套餐功能一致，差异集中在积分、有效期和购买条件。</p>
+        <p>三个套餐的价格、积分、许可证、硬件与团队能力如下。</p>
       </div>
       <div class="compare-shell" role="region" aria-label="套餐详细对比" tabindex="0">
         <div class="compare">
           <div class="compare-head">比较项目</div>
-          <div class="compare-head">新客体验</div>
-          <div class="compare-head">半年服务</div>
-          <div class="compare-head recommend-head">一年服务 · 推荐</div>
-          <div class="compare-head">企业定制</div>
+          <div class="compare-head">体验包</div>
+          <div class="compare-head recommend-head">个人版</div>
+          <div class="compare-head">企业版</div>
 
           <div class="group">价格与额度</div>
-          <div data-od-id="compare-price">服务价格</div><div>¥199</div><div>¥3,999</div><div>¥6,999</div><div>按需报价</div>
-          <div data-od-id="compare-credit">积分额度</div><div>20,000</div><div>420,000</div><div>840,000</div><div>按任务量配置</div>
-          <div data-od-id="compare-validity">有效期</div><div>30 天</div><div>180 天</div><div>365 天</div><div>按合同</div>
-          <div data-od-id="compare-first-year">含 1 台盒子的首年合计</div><div>¥4,198</div><div>¥7,998</div><div>¥10,998</div><div>按配置报价</div>
+          <div data-od-id="compare-price">套餐价格</div><div>¥68</div><div>¥3,000/年</div><div>¥29,800/年</div>
+          <div data-od-id="compare-credit">积分额度</div><div>5,000</div><div>200,000</div><div>2,980,000</div>
+          <div data-od-id="compare-validity">服务周期</div><div>30 天试用</div><div>1 年</div><div>1 年</div>
+          <div data-od-id="compare-license">软件许可证</div><div>试用期使用</div><div>包含 1 年</div><div>赠送 1 年年费</div>
 
           <div class="group">使用规则</div>
-          <div data-od-id="compare-standard-product">完整标准产品能力</div><div class="check">✓</div><div class="check">✓</div><div class="check">✓</div><div class="check">✓</div>
-          <div data-od-id="compare-buy-rule">购买限制</div><div>仅新客一次</div><div>不限续购</div><div>不限续购</div><div>按合同</div>
-          <div data-od-id="compare-addon">积分加油包</div><div class="dash">—</div><div class="check">✓</div><div class="check">✓</div><div>按积分池配置</div>
-          <div data-od-id="compare-team">团队后台与权限</div><div class="dash">—</div><div class="dash">—</div><div class="dash">—</div><div class="check">✓</div>
+          <div data-od-id="compare-hardware">硬件</div><div>不绑定</div><div>不包含</div><div>赠送</div>
+          <div data-od-id="compare-addon">后续积分增值</div><div class="dash">—</div><div>¥1=100积分</div><div>按企业采购规则</div>
+          <div data-od-id="compare-team">企业后台与团队协作</div><div class="dash">—</div><div class="dash">—</div><div class="check">✓</div>
 
           <div class="group">理论任务上限</div>
-          <div data-od-id="compare-images">标准图片 · 20积分/张</div><div>约 1,000 张</div><div>约 21,000 张</div><div>约 42,000 张</div><div>按积分池计算</div>
-          <div data-od-id="compare-videos">标准视频 · 720P/10秒</div><div>约 19 条</div><div>约 411 条</div><div>约 823 条</div><div>按积分池计算</div>
+          <div data-od-id="compare-images">标准图片 · 20积分/张</div><div>约 250 张</div><div>约 10,000 张</div><div>约 149,000 张</div>
+          <div data-od-id="compare-videos">标准视频 · 720P/10秒 · 850积分</div><div>约 5 条</div><div>约 235 条</div><div>约 3,505 条</div>
         </div>
       </div>
     </section>
@@ -1067,24 +1033,28 @@
       </div>
       <div class="faq">
         <details open>
-          <summary>体验、半年和一年套餐的功能不同吗？</summary>
-          <p>不同周期使用的是同一套标准产品能力。差异只在积分数量、有效期和购买规则，不会通过功能墙迫使客户升级。</p>
+          <summary>目前一共有几个套餐？</summary>
+          <p>目前有且只有三个套餐：¥68 体验包、¥3,000/年个人版和 ¥29,800/年企业版。积分增值与渠道分成属于配套规则，不是额外套餐。</p>
         </details>
         <details>
-          <summary>首次购买为什么还需要硬件与激活？</summary>
-          <p>全球内容营销盒子包含本地硬件、系统镜像、远程激活、基础部署和上线培训。硬件为一次性购买，后续续费服务套餐不需要重复采购。</p>
+          <summary>体验包需要购买或绑定硬件吗？</summary>
+          <p>不需要。体验包价格为 ¥68，包含 5,000 积分和 30 天试用期，独立购买且不和硬件绑定。</p>
         </details>
         <details>
-          <summary>积分不够了怎么办？</summary>
-          <p>半年、一年及有效企业套餐客户可以购买积分加油包，固定为 ¥1=100 积分，最低购买 10,000 积分，加油包积分自到账之日起有效 12 个月。</p>
+          <summary>个人版积分不够了怎么办？</summary>
+          <p>个人版年费为 ¥3,000，包含 20 万积分和 1 年软件许可证。套餐积分不足后，可按 ¥1=100 积分继续增值。</p>
         </details>
         <details>
           <summary>图片和视频的“约可生成数量”是承诺吗？</summary>
           <p>表格展示的是全部积分只用于同一种任务时的理论上限。实际消耗会因图片质量、参考图数量、视频规格、时长和具体工作流而变化，提交任务前会显示预计积分。</p>
         </details>
         <details>
-          <summary>企业定制版增加了什么？</summary>
-          <p>企业定制主要解决组织复杂度，包括企业后台、成员与角色权限、共享积分、统计、接口、并发、SLA 以及实施服务，并按团队规模和交付范围报价。</p>
+          <summary>企业版包含什么？</summary>
+          <p>企业版为 ¥29,800/年，包含 298 万企业共享积分，赠送 1 年软件许可证年费和内容营销盒子硬件，并提供企业后台与团队协作能力。</p>
+        </details>
+        <details>
+          <summary>渠道合作如何获得积分充值分成？</summary>
+          <p>渠道累计销售达到 5 万元后，可获得其拓展用户后续积分充值的 10% 分成资格；累计销售达到 20 万元后，可获得 20% 分成资格。</p>
         </details>
         <details>
           <summary>底层 AI 服务价格变化会影响套餐价格吗？</summary>
@@ -1096,8 +1066,8 @@
     <section class="cta-band" id="contact">
       <div class="cta-inner shell">
         <div>
-          <h2>选好周期，开始稳定生产内容</h2>
-          <p>购买链接、设备配置和企业方案由项目顾问统一提供。</p>
+          <h2>选择适合你的套餐，开始生产内容</h2>
+          <p>购买链接与二维码由项目顾问统一提供。</p>
         </div>
         <a class="button" href="#pricing">返回选择套餐</a>
       </div>
@@ -1107,7 +1077,7 @@
   <footer>
     <div class="footer-inner shell">
       <p>© 2026 全球内容营销盒子</p>
-      <p>价格与积分更新于 2026-07-28 · 最终以购买页面和合同为准</p>
+      <p>价格与积分更新于 2026-08-02 · 最终以购买页面和合同为准</p>
     </div>
   </footer>
 </body>

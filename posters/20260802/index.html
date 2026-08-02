@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>全球内容营销盒子｜套餐购买海报</title>
+  <style>
+    :root {
+      --ink: #f7f8fb;
+      --muted: rgba(240, 244, 255, .68);
+      --line: rgba(255, 255, 255, .15);
+      --paper: #f8f4ea;
+      --navy: #07101f;
+      --navy-2: #0a1830;
+      --cyan: #55d6ff;
+      --blue: #3974ff;
+      --amber: #ffbd66;
+      --violet: #b39aff;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #020711; }
+    body {
+      font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      color: var(--ink);
+    }
+
+    .poster {
+      --accent: var(--cyan);
+      --accent-2: var(--blue);
+      position: relative;
+      width: 1080px;
+      height: 1440px;
+      overflow: hidden;
+      padding: 58px 64px 48px;
+      background:
+        radial-gradient(circle at 84% 16%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 31%),
+        linear-gradient(155deg, rgba(7,16,31,.90), rgba(5,13,28,.98) 60%, #081326);
+      isolation: isolate;
+    }
+
+    .poster::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background: url("../../assets/poster-global-flow-bg-20260802.png") center / cover no-repeat;
+      opacity: .34;
+      filter: saturate(.85) contrast(1.08);
+    }
+
+    .poster::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.78), transparent 78%);
+    }
+
+    .personal { --accent: var(--amber); --accent-2: #ff7a45; }
+    .enterprise { --accent: var(--violet); --accent-2: var(--cyan); }
+
+    .topbar {
+      height: 76px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 700;
+      font-size: 25px;
+      letter-spacing: .04em;
+    }
+
+    .brand-mark {
+      width: 31px;
+      height: 31px;
+      border: 7px solid var(--accent);
+      border-radius: 10px 4px 10px 4px;
+      transform: rotate(10deg);
+      box-shadow: 0 0 22px color-mix(in srgb, var(--accent) 60%, transparent);
+    }
+
+    .scene-tag {
+      padding: 10px 18px;
+      border: 1px solid color-mix(in srgb, var(--accent) 48%, transparent);
+      border-radius: 999px;
+      color: var(--accent);
+      background: color-mix(in srgb, var(--accent) 9%, transparent);
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    .hero {
+      position: relative;
+      height: 398px;
+      padding-top: 32px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 20px;
+      font-weight: 750;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 12px 0 8px;
+      font-size: 60px;
+      line-height: 1.02;
+      letter-spacing: -.045em;
+      max-width: 780px;
+    }
+
+    .hero-copy {
+      margin: 0;
+      width: 680px;
+      color: var(--muted);
+      font-size: 21px;
+      line-height: 1.45;
+    }
+
+    .price-line {
+      display: flex;
+      align-items: flex-end;
+      gap: 24px;
+      margin-top: 15px;
+    }
+
+    .price {
+      font-family: "Arial Black", "PingFang SC", sans-serif;
+      font-size: 96px;
+      line-height: .9;
+      letter-spacing: -.065em;
+      color: #fff;
+      text-shadow: 0 0 40px color-mix(in srgb, var(--accent) 24%, transparent);
+    }
+
+    .price small {
+      font-family: "PingFang SC", sans-serif;
+      font-size: 25px;
+      letter-spacing: 0;
+      color: var(--accent);
+      margin-left: 14px;
+    }
+
+    .hero-device {
+      position: absolute;
+      right: -55px;
+      top: 65px;
+      width: 390px;
+      opacity: .72;
+      filter: drop-shadow(0 30px 38px rgba(0,0,0,.52));
+      transform: rotate(-3deg);
+    }
+
+    .trial .price { font-size: 104px; }
+    .trial .hero-device,
+    .personal .hero-device { display: none; }
+    .enterprise .price { font-size: 90px; }
+
+    .service-panel {
+      position: relative;
+      min-height: 405px;
+      padding: 34px 36px 30px;
+      border: 1px solid color-mix(in srgb, var(--accent) 34%, rgba(255,255,255,.1));
+      border-radius: 30px;
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, transparent), rgba(255,255,255,.025)),
+        rgba(5, 13, 28, .72);
+      backdrop-filter: blur(18px);
+      box-shadow: inset 0 1px rgba(255,255,255,.10), 0 28px 80px rgba(0,0,0,.23);
+    }
+
+    .panel-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+
+    .panel-heading h2 {
+      margin: 0;
+      font-size: 27px;
+      letter-spacing: .02em;
+    }
+
+    .panel-heading span {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .benefit {
+      min-height: 116px;
+      padding: 20px 19px;
+      border-radius: 19px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.09);
+    }
+
+    .benefit strong {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--accent);
+      font-size: 28px;
+      line-height: 1.15;
+    }
+
+    .benefit span {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.45;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px 26px;
+      color: rgba(246,248,255,.88);
+      font-size: 19px;
+      line-height: 1.45;
+    }
+
+    .service-item {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .service-item::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent);
+      font-weight: 900;
+    }
+
+    .buy-zone {
+      height: 251px;
+      display: grid;
+      grid-template-columns: 1fr 205px;
+      gap: 28px;
+      align-items: center;
+      padding-top: 25px;
+    }
+
+    .cta {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cta-kicker {
+      color: var(--accent);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: .12em;
+    }
+
+    .cta h3 {
+      margin: 9px 0 8px;
+      font-size: 36px;
+      line-height: 1.18;
+    }
+
+    .cta p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.45;
+    }
+
+    .qr-placeholder {
+      width: 205px;
+      height: 205px;
+      padding: 17px;
+      border: 2px dashed color-mix(in srgb, var(--accent) 72%, #fff);
+      border-radius: 23px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #152039;
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 18px 50px rgba(0,0,0,.28);
+    }
+
+    .qr-placeholder::before {
+      content: "⌗";
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 58px;
+      line-height: .8;
+      color: var(--accent-2);
+      margin-bottom: 13px;
+    }
+
+    .qr-placeholder strong { font-size: 20px; }
+    .qr-placeholder span { margin-top: 7px; font-size: 14px; color: #64708a; }
+
+    .channel-strip {
+      height: 150px;
+      margin: 0 -18px;
+      padding: 0 18px;
+      border-top: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(90deg, rgba(4,11,25,.94), rgba(6,14,30,.84));
+      box-shadow: 0 -24px 60px rgba(4,11,25,.34);
+      display: grid;
+      grid-template-columns: 215px 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .channel-title strong {
+      display: block;
+      color: var(--accent);
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    .channel-title span { color: var(--muted); font-size: 14px; }
+
+    .channel-tier {
+      padding: 16px 18px;
+      border-radius: 15px;
+      background: rgba(255,255,255,.045);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .channel-tier b {
+      display: block;
+      font-size: 19px;
+      margin-bottom: 4px;
+    }
+
+    .channel-tier span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .legal {
+      position: absolute;
+      right: 64px;
+      bottom: 21px;
+      color: rgba(255,255,255,.38);
+      font-size: 12px;
+      letter-spacing: .04em;
+    }
+
+    .poster:not(.active) { display: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="poster trial" data-poster="trial">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark"></span><span>全球内容营销盒子</span></div>
+        <div class="scene-tag">现场专享 · 扫码即购</div>
+      </header>
+
+      <div class="hero">
+        <div class="eyebrow">TRY FIRST · 轻松开始</div>
+        <h1>先跑通一次<br>完整内容工作流</h1>
+        <p class="hero-copy">不需要先买硬件，用30天验证选题、脚本、图片与视频的真实生产效率。</p>
+        <div class="price-line"><div class="price">¥68</div><div class="eyebrow">体验包</div></div>
+      </div>
+
+      <section class="service-panel">
+        <div class="panel-heading"><h2>价格包含</h2><span>适合首次体验与现场转化</span></div>
+        <div class="benefit-grid">
+          <div class="benefit"><strong>5,000</strong><span>平台积分</span></div>
+          <div class="benefit"><strong>30天</strong><span>试用有效期</span></div>
+          <div class="benefit"><strong>不绑定</strong><span>无需购买硬件</span></div>
+        </div>
+        <div class="service-list">
+          <div class="service-item">体验选题与内容策划</div>
+          <div class="service-item">体验脚本与营销文案</div>
+          <div class="service-item">按积分生成图片与视频</div>
+          <div class="service-item">提交任务前显示预计积分</div>
+        </div>
+      </section>
+
+      <section class="buy-zone">
+        <div class="cta"><div class="cta-kicker">68元先体验</div><h3>感兴趣，就先买一份试试</h3><p>5,000积分按实际任务使用，30天内完成一次真实内容生产验证。</p></div>
+        <div class="qr-placeholder"><strong>购买二维码</strong><span>后续嵌入 · 扫码即购</span></div>
+      </section>
+
+      <div class="channel-strip">
+        <div class="channel-title"><strong>渠道合作激励</strong><span>按累计销售额获得资格</span></div>
+        <div class="channel-tier"><b>销售 ≥ 5万元</b><span>其拓展用户后续积分充值<br>获得10%分成资格</span></div>
+        <div class="channel-tier"><b>销售 ≥ 20万元</b><span>其拓展用户后续积分充值<br>获得20%分成资格</span></div>
+      </div>
+      <div class="legal">具体权益、积分消耗与渠道结算以购买页及合同为准</div>
+    </section>
+
+    <section class="poster personal" data-poster="personal">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark"></span><span>全球内容营销盒子</span></div>
+        <div class="scene-tag">年度个人方案 · 扫码即购</div>
+      </header>
+
+      <div class="hero">
+        <div class="eyebrow">PERSONAL · 持续内容生产</div>
+        <h1>一个人，也能持续做<br>全球内容营销</h1>
+        <p class="hero-copy">一次购买，获得一年许可证和20万积分；积分不足时按需增值。</p>
+        <div class="price-line"><div class="price">¥3,000<small>/ 年</small></div></div>
+      </div>
+
+      <section class="service-panel">
+        <div class="panel-heading"><h2>个人版年费包含</h2><span>适合个人创作者与一人公司</span></div>
+        <div class="benefit-grid">
+          <div class="benefit"><strong>200,000</strong><span>年度平台积分</span></div>
+          <div class="benefit"><strong>1年</strong><span>软件许可证</span></div>
+          <div class="benefit"><strong>¥1=100分</strong><span>后续按需增值</span></div>
+        </div>
+        <div class="service-list">
+          <div class="service-item">选题、脚本与内容策划</div>
+          <div class="service-item">图片与视频生成</div>
+          <div class="service-item">全年使用同一套产品能力</div>
+          <div class="service-item">积分不足可继续充值</div>
+        </div>
+      </section>
+
+      <section class="buy-zone">
+        <div class="cta"><div class="cta-kicker">一年许可证 + 20万积分</div><h3>把内容生产变成长期能力</h3><p>年费¥3,000；后续增值固定¥1=100积分，用多少再充多少。</p></div>
+        <div class="qr-placeholder"><strong>购买二维码</strong><span>后续嵌入 · 扫码即购</span></div>
+      </section>
+
+      <div class="channel-strip">
+        <div class="channel-title"><strong>渠道合作激励</strong><span>按累计销售额获得资格</span></div>
+        <div class="channel-tier"><b>销售 ≥ 5万元</b><span>其拓展用户后续积分充值<br>获得10%分成资格</span></div>
+        <div class="channel-tier"><b>销售 ≥ 20万元</b><span>其拓展用户后续积分充值<br>获得20%分成资格</span></div>
+      </div>
+      <div class="legal">具体权益、积分消耗与渠道结算以购买页及合同为准</div>
+    </section>
+
+    <section class="poster enterprise" data-poster="enterprise">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark"></span><span>全球内容营销盒子</span></div>
+        <div class="scene-tag">企业年度服务 · 扫码购买</div>
+      </header>
+
+      <div class="hero">
+        <div class="eyebrow">ENTERPRISE · 团队规模化生产</div>
+        <h1>让团队拥有自己的<br>内容营销生产中心</h1>
+        <p class="hero-copy">企业后台、团队协作与共享积分，一套年度服务统一承接。</p>
+        <div class="price-line"><div class="price">¥29,800<small>/ 年</small></div></div>
+        <img class="hero-device" src="../../assets/content-box-device.png" alt="全球内容营销盒子硬件示意" />
+      </div>
+
+      <section class="service-panel">
+        <div class="panel-heading"><h2>企业版年费服务包含</h2><span>适合团队、品牌与渠道客户</span></div>
+        <div class="benefit-grid">
+          <div class="benefit"><strong>2,980,000</strong><span>企业共享积分</span></div>
+          <div class="benefit"><strong>赠1年</strong><span>软件许可证年费</span></div>
+          <div class="benefit"><strong>赠硬件</strong><span>内容营销盒子</span></div>
+        </div>
+        <div class="service-list">
+          <div class="service-item">企业后台与团队协作</div>
+          <div class="service-item">共享积分与统一使用</div>
+          <div class="service-item">成员权限与使用统计</div>
+          <div class="service-item">图片、视频和内容工作流</div>
+        </div>
+      </section>
+
+      <section class="buy-zone">
+        <div class="cta"><div class="cta-kicker">298万积分 + 许可证 + 硬件</div><h3>一次配齐企业年度内容生产能力</h3><p>适合团队协作、批量生产和长期内容运营，现场扫码即可购买。</p></div>
+        <div class="qr-placeholder"><strong>购买二维码</strong><span>后续嵌入 · 扫码即购</span></div>
+      </section>
+
+      <div class="channel-strip">
+        <div class="channel-title"><strong>渠道合作激励</strong><span>按累计销售额获得资格</span></div>
+        <div class="channel-tier"><b>销售 ≥ 5万元</b><span>其拓展用户后续积分充值<br>获得10%分成资格</span></div>
+        <div class="channel-tier"><b>销售 ≥ 20万元</b><span>其拓展用户后续积分充值<br>获得20%分成资格</span></div>
+      </div>
+      <div class="legal">具体权益、积分消耗与渠道结算以购买页及合同为准</div>
+    </section>
+  </main>
+
+  <script>
+    const selected = new URLSearchParams(location.search).get("poster") || "trial";
+    document.querySelectorAll("[data-poster]").forEach((node) => {
+      node.classList.toggle("active", node.dataset.poster === selected);
+    });
+  </script>
+</body>
+</html>
