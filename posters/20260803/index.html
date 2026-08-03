@@ -4,6 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>全球内容营销盒子｜套餐购买海报</title>
+  <script>
+    document.documentElement.dataset.poster = new URLSearchParams(location.search).get("poster") || "trial";
+  </script>
   <style>
     :root {
       --ink: #f7f8fb;
@@ -76,9 +79,11 @@
       display: flex;
       align-items: center;
       gap: 14px;
+      width: 340px;
       font-weight: 700;
       font-size: 25px;
       letter-spacing: .04em;
+      white-space: nowrap;
     }
 
     .brand-mark {
@@ -89,6 +94,11 @@
       transform: rotate(10deg);
       box-shadow: 0 0 22px color-mix(in srgb, var(--accent) 60%, transparent);
     }
+
+    .brand-title { width: 250px; height: 38px; overflow: visible; }
+    .brand-title text { fill: #f7f8fb; font: 700 25px "PingFang SC", "Microsoft YaHei", sans-serif; letter-spacing: .04em; }
+    .brand-chars { display: flex; gap: 1px; width: 250px; }
+    .brand-chars i { font-style: normal; }
 
     .scene-tag {
       padding: 10px 18px;
@@ -369,21 +379,23 @@
       letter-spacing: .04em;
     }
 
-    .poster:not(.active) { display: none; }
+    html[data-poster="trial"] [data-poster]:not([data-poster="trial"]),
+    html[data-poster="personal"] [data-poster]:not([data-poster="personal"]),
+    html[data-poster="enterprise"] [data-poster]:not([data-poster="enterprise"]) { display: none; }
   </style>
 </head>
 <body>
   <main>
     <section class="poster trial" data-poster="trial">
       <header class="topbar">
-        <div class="brand"><span class="brand-mark"></span><span>全球内容营销盒子</span></div>
+        <div class="brand" aria-label="全球内容营销盒子"><span class="brand-mark"></span><span class="brand-chars"><i>全</i><i>球</i><i>内</i><i>容</i><i>营</i><i>销</i><i>盒</i><i>子</i></span></div>
         <div class="scene-tag">现场专享 · 扫码即购</div>
       </header>
 
       <div class="hero">
         <div class="eyebrow">TRY FIRST · 轻松开始</div>
         <h1>先跑通一次<br>完整内容工作流</h1>
-        <p class="hero-copy">不需要先买硬件，用30天验证选题、脚本、图片与视频的真实生产效率。</p>
+        <p class="hero-copy">用30天验证选题、脚本、图片与视频的真实生产效率。</p>
         <div class="price-line"><div class="price">¥68</div><div class="eyebrow">体验包</div></div>
       </div>
 
@@ -392,7 +404,7 @@
         <div class="benefit-grid">
           <div class="benefit"><strong>5,000</strong><span>平台积分</span></div>
           <div class="benefit"><strong>30天</strong><span>试用有效期</span></div>
-          <div class="benefit"><strong>不绑定</strong><span>无需购买硬件</span></div>
+          <div class="benefit"><strong>新客专享</strong><span>每位客户限购一次</span></div>
         </div>
         <div class="service-list">
           <div class="service-item">体验选题与内容策划</div>
@@ -408,16 +420,16 @@
       </section>
 
       <div class="channel-strip">
-        <div class="channel-title"><strong>渠道合作激励</strong><span>按累计销售额获得资格</span></div>
-        <div class="channel-tier"><b>销售 ≥ 5万元</b><span>其拓展用户后续积分充值<br>获得10%分成资格</span></div>
-        <div class="channel-tier"><b>销售 ≥ 20万元</b><span>其拓展用户后续积分充值<br>获得20%分成资格</span></div>
+        <div class="channel-title"><strong>新客轻松上手</strong><span>低门槛体验真实内容工作流</span></div>
+        <div class="channel-tier"><b>5,000 平台积分</b><span>体验选题、图片与视频<br>完整内容生产流程</span></div>
+        <div class="channel-tier"><b>30 天体验期</b><span>用真实业务验证效果<br>满意再升级长期套餐</span></div>
       </div>
-      <div class="legal">具体权益、积分消耗与渠道结算以购买页及合同为准</div>
+      <div class="legal">具体权益与积分消耗以最新购买页面及合同为准</div>
     </section>
 
     <section class="poster personal" data-poster="personal">
       <header class="topbar">
-        <div class="brand"><span class="brand-mark"></span><span>全球内容营销盒子</span></div>
+        <div class="brand" aria-label="全球内容营销盒子"><span class="brand-mark"></span><span class="brand-chars"><i>全</i><i>球</i><i>内</i><i>容</i><i>营</i><i>销</i><i>盒</i><i>子</i></span></div>
         <div class="scene-tag">年度个人方案 · 扫码即购</div>
       </header>
 
@@ -449,16 +461,16 @@
       </section>
 
       <div class="channel-strip">
-        <div class="channel-title"><strong>渠道合作激励</strong><span>按累计销售额获得资格</span></div>
-        <div class="channel-tier"><b>销售 ≥ 5万元</b><span>其拓展用户后续积分充值<br>获得10%分成资格</span></div>
-        <div class="channel-tier"><b>销售 ≥ 20万元</b><span>其拓展用户后续积分充值<br>获得20%分成资格</span></div>
+        <div class="channel-title"><strong>全年内容生产力</strong><span>个人创作者与一人公司的长期方案</span></div>
+        <div class="channel-tier"><b>20 万年度积分</b><span>持续生成图片与视频<br>覆盖日常营销需求</span></div>
+        <div class="channel-tier"><b>1 年软件许可</b><span>积分不足按需增值<br>固定 ¥1=100积分</span></div>
       </div>
-      <div class="legal">具体权益、积分消耗与渠道结算以购买页及合同为准</div>
+      <div class="legal">具体权益与积分消耗以最新购买页面及合同为准</div>
     </section>
 
     <section class="poster enterprise" data-poster="enterprise">
       <header class="topbar">
-        <div class="brand"><span class="brand-mark"></span><span>全球内容营销盒子</span></div>
+        <div class="brand" aria-label="全球内容营销盒子"><span class="brand-mark"></span><svg class="brand-title" viewBox="0 0 250 38"><text x="0" y="29">全球内容营销盒子</text></svg></div>
         <div class="scene-tag">企业年度服务 · 扫码购买</div>
       </header>
 
@@ -466,14 +478,14 @@
         <div class="eyebrow">ENTERPRISE · 团队规模化生产</div>
         <h1>让团队拥有自己的<br>内容营销生产中心</h1>
         <p class="hero-copy">企业后台、团队协作与共享积分，一套年度服务统一承接。</p>
-        <div class="price-line"><div class="price">¥29,800<small>/ 年</small></div></div>
+        <div class="price-line"><div class="price">¥30,000<small>/ 年</small></div></div>
         <img class="hero-device" src="../../assets/content-box-device.png" alt="全球内容营销盒子硬件示意" />
       </div>
 
       <section class="service-panel">
-        <div class="panel-heading"><h2>企业版年费服务包含</h2><span>适合团队、品牌与渠道客户</span></div>
+        <div class="panel-heading"><h2>企业版年费服务包含</h2><span>适合团队与品牌客户</span></div>
         <div class="benefit-grid">
-          <div class="benefit"><strong>2,980,000</strong><span>企业共享积分</span></div>
+          <div class="benefit"><strong>2,700,000</strong><span>企业共享积分</span></div>
           <div class="benefit"><strong>赠1年</strong><span>软件许可证年费</span></div>
           <div class="benefit"><strong>赠硬件</strong><span>内容营销盒子</span></div>
         </div>
@@ -486,24 +498,18 @@
       </section>
 
       <section class="buy-zone">
-        <div class="cta"><div class="cta-kicker">298万积分 + 许可证 + 硬件</div><h3>一次配齐企业年度内容生产能力</h3><p>适合团队协作、批量生产和长期内容运营，现场扫码即可购买。</p></div>
+        <div class="cta"><div class="cta-kicker">270万积分 + 许可证 + 硬件</div><h3>一次配齐企业年度内容生产能力</h3><p>适合团队协作、批量生产和长期内容运营，现场扫码即可购买。</p></div>
         <div class="qr-placeholder"><strong>购买二维码</strong><span>后续嵌入 · 扫码即购</span></div>
       </section>
 
       <div class="channel-strip">
-        <div class="channel-title"><strong>渠道合作激励</strong><span>按累计销售额获得资格</span></div>
-        <div class="channel-tier"><b>销售 ≥ 5万元</b><span>其拓展用户后续积分充值<br>获得10%分成资格</span></div>
-        <div class="channel-tier"><b>销售 ≥ 20万元</b><span>其拓展用户后续积分充值<br>获得20%分成资格</span></div>
+        <div class="channel-title"><strong>企业级内容生产</strong><span>一套服务承接团队年度内容需求</span></div>
+        <div class="channel-tier"><b>270 万共享积分</b><span>团队统一使用<br>支撑规模化内容生产</span></div>
+        <div class="channel-tier"><b>后台与团队协作</b><span>成员权限、使用统计<br>许可证与硬件一次配齐</span></div>
       </div>
-      <div class="legal">具体权益、积分消耗与渠道结算以购买页及合同为准</div>
+      <div class="legal">具体权益与积分消耗以最新购买页面及合同为准</div>
     </section>
   </main>
 
-  <script>
-    const selected = new URLSearchParams(location.search).get("poster") || "trial";
-    document.querySelectorAll("[data-poster]").forEach((node) => {
-      node.classList.toggle("active", node.dataset.poster === selected);
-    });
-  </script>
 </body>
 </html>

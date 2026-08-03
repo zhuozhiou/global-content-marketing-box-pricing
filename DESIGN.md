@@ -53,7 +53,8 @@
 - The personal plan is the only visually dominant plan.
 - “目前有且只有三个套餐” must be explicit.
 - Trial is not tied to hardware; personal does not imply hardware; enterprise explicitly includes gifted hardware.
-- Public task examples use the aggressive point table by default; only an explicitly labeled ordinary-version page may use ordinary points.
+- Public task examples use the ordinary point table by default; only an explicitly labeled aggressive-version page may use aggressive points.
+- Customer-facing posters do not display channel incentives, supplier costs, margin rules, or internal hardware-binding language.
 - Internal costs, suppliers, margins, token pricing and model route names must never appear.
 - Every output estimate includes image quality or video resolution and duration.
 - Mobile pricing cards stack; comparison table scrolls horizontally.

@@ -43,8 +43,8 @@
   <rect x="62" y="300" width="350" height="176" rx="24" fill="#fff" fill-opacity=".92" stroke="#fff"/>
   <text x="86" y="339" font-size="17" font-weight="700" class="blue">套餐原则</text>
   <text x="84" y="399" font-size="56" font-weight="800" letter-spacing="-2">仅 3 档</text>
-  <text x="86" y="431" font-size="15" class="muted">积分增值和渠道分成属于配套规则</text>
-  <text x="86" y="455" font-size="15" class="muted">不是额外套餐</text>
+  <text x="86" y="431" font-size="15" class="muted">从首次体验到团队规模化生产</text>
+  <text x="86" y="455" font-size="15" class="muted">按阶段选择即可</text>
   <image href="assets/content-box-device.png" x="420" y="210" width="590" height="395" preserveAspectRatio="xMidYMid meet" filter="url(#productShadow)"/>
 
   <text x="64" y="623" font-size="31" font-weight="800">三个公开套餐</text>
@@ -59,7 +59,7 @@
   <text x="190" y="761" font-size="16" class="muted">/ 30天</text>
   <text x="88" y="808" class="credit">5,000 积分</text>
   <text x="88" y="849" class="small muted">30 天试用期</text>
-  <text x="88" y="879" class="small muted">不与硬件绑定</text>
+  <text x="88" y="879" class="small muted">仅限新客 · 限购一次</text>
 
   <text x="411" y="696" class="name white">个人版</text>
   <rect x="612" y="674" width="56" height="29" rx="14.5" fill="#fff"/>
@@ -71,24 +71,24 @@
   <text x="411" y="879" class="small softwhite">后续 ¥1=100 积分增值</text>
 
   <text x="734" y="696" class="name">企业版</text>
-  <text x="734" y="761" font-size="37" font-weight="800" letter-spacing="-2">¥29,800</text>
+  <text x="734" y="761" font-size="37" font-weight="800" letter-spacing="-2">¥30,000</text>
   <text x="910" y="761" font-size="16" class="muted">/ 年</text>
-  <text x="734" y="808" class="credit">2,980,000 积分</text>
+  <text x="734" y="808" class="credit">2,700,000 积分</text>
   <text x="734" y="849" class="small muted">赠 1 年许可证年费 + 硬件</text>
   <text x="734" y="879" class="small muted">企业后台 · 团队协作</text>
 
   <rect x="64" y="995" width="952" height="250" rx="22" fill="#fff" fill-opacity=".96" stroke="#dfe3f3"/>
   <line x1="382" y1="1023" x2="382" y2="1217" stroke="#e4e7f2"/>
   <line x1="700" y1="1023" x2="700" y2="1217" stroke="#e4e7f2"/>
-  <text x="88" y="1042" class="small muted">个人版积分不足后</text>
-  <text x="88" y="1090" font-size="26" font-weight="800" class="blue">¥1 = 100积分</text>
-  <text x="88" y="1128" class="small muted">按需购买增值积分</text>
-  <text x="406" y="1042" class="small muted">渠道累计销售 ≥ 5万元</text>
-  <text x="406" y="1090" font-size="26" font-weight="800" class="blue">10% 分成资格</text>
-  <text x="406" y="1128" class="small muted">其拓展用户后续积分充值</text>
-  <text x="724" y="1042" class="small muted">渠道累计销售 ≥ 20万元</text>
-  <text x="724" y="1090" font-size="26" font-weight="800" class="blue">20% 分成资格</text>
-  <text x="724" y="1128" class="small muted">其拓展用户后续积分充值</text>
+  <text x="88" y="1042" class="small muted">一套工作流覆盖</text>
+  <text x="88" y="1090" font-size="26" font-weight="800" class="blue">选题 · 图片 · 视频</text>
+  <text x="88" y="1128" class="small muted">从创意到成片集中完成</text>
+  <text x="406" y="1042" class="small muted">个人版积分不足后</text>
+  <text x="406" y="1090" font-size="26" font-weight="800" class="blue">¥1 = 100积分</text>
+  <text x="406" y="1128" class="small muted">按需购买增值积分</text>
+  <text x="724" y="1042" class="small muted">企业版专享</text>
+  <text x="724" y="1090" font-size="26" font-weight="800" class="blue">后台 · 协作 · 统计</text>
+  <text x="724" y="1128" class="small muted">团队共享年度生产能力</text>
 
   <text x="64" y="1317" class="tiny muted">目前有且只有以上三个套餐</text>
   <text x="1016" y="1317" text-anchor="end" class="tiny muted">价格与积分以最新购买页面及合同为准</text>
