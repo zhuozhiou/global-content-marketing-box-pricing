@@ -42,9 +42,9 @@
 - Hero: centered title, short explanation, three proof chips.
 - Pricing cards: white cards, one purple recommended card, clear price and credit amount.
 - Pricing cards: exactly three cards—trial, personal, enterprise. No standalone hardware package or hidden fourth tier.
-- Add-on cards: point top-up and channel incentives are rules, not additional packages.
-- Task cost table: customer-readable task names only; no channel or cost data.
-- Comparison table: compares purchase terms rather than artificial feature tiers.
+- Add-on cards: show the customer's flexible use story only; do not show channels, rebates, or cooperation policies.
+- Output section: use customer-readable “approximately how many light images / 10-second light videos” estimates, never model names or per-task point consumption.
+- Comparison table: follow a LinkFox-style detailed comparison of purchase terms, content output references, and product / team rights rather than artificial feature tiers.
 - FAQ: native `details/summary`.
 - CTA: dark footer band with one primary white button.
 
@@ -53,8 +53,8 @@
 - The personal plan is the only visually dominant plan.
 - “目前有且只有三个套餐” must be explicit.
 - Trial is not tied to hardware; personal does not imply hardware; enterprise explicitly includes gifted hardware.
-- Public task examples use the ordinary point table by default; only an explicitly labeled aggressive-version page may use aggressive points.
+- Public output examples use the ordinary table internally but do not expose the point table; the lowest-quality baseline must be named as “轻量图片” or “10秒轻量视频”.
 - Customer-facing posters do not display channel incentives, supplier costs, margin rules, or internal hardware-binding language.
 - Internal costs, suppliers, margins, token pricing and model route names must never appear.
-- Every output estimate includes image quality or video resolution and duration.
+- Every output estimate says it is an approximate all-credit, single-content-type estimate and states image quality or video duration.
 - Mobile pricing cards stack; comparison table scrolls horizontally.

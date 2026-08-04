@@ -9,6 +9,11 @@
       <stop offset="0" stop-color="#5f6df0"/>
       <stop offset="1" stop-color="#3949d1"/>
     </linearGradient>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dfe4ff"/>
+      <stop offset="0.45" stop-color="#ced8ff"/>
+      <stop offset="1" stop-color="#c4cfff"/>
+    </linearGradient>
     <filter id="productShadow" x="-20%" y="-20%" width="150%" height="170%">
       <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#364080" flood-opacity="0.22"/>
     </filter>
@@ -26,7 +31,9 @@
     </style>
   </defs>
 
-  <image href="assets/pricing-poster-background-20260802.png" x="0" y="0" width="1080" height="1350" preserveAspectRatio="xMidYMid slice"/>
+  <rect x="0" y="0" width="1080" height="1350" fill="#f5f6ff"/>
+  <rect x="0" y="0" width="1080" height="560" fill="url(#heroBg)"/>
+  <g opacity=".20" stroke="#5b5fe8"><path d="M0 88H1080M0 176H1080M0 264H1080M0 352H1080M0 440H1080M90 0V560M180 0V560M270 0V560M360 0V560M450 0V560M540 0V560M630 0V560M720 0V560M810 0V560M900 0V560M990 0V560"/></g>
   <rect x="0" y="510" width="1080" height="840" fill="url(#lowerWash)"/>
 
   <g transform="translate(64 48)">
@@ -45,10 +52,21 @@
   <text x="84" y="399" font-size="56" font-weight="800" letter-spacing="-2">仅 3 档</text>
   <text x="86" y="431" font-size="15" class="muted">从首次体验到团队规模化生产</text>
   <text x="86" y="455" font-size="15" class="muted">按阶段选择即可</text>
-  <image href="assets/content-box-device.png" x="420" y="210" width="590" height="395" preserveAspectRatio="xMidYMid meet" filter="url(#productShadow)"/>
+  <g transform="translate(492 236)" filter="url(#productShadow)">
+    <rect width="438" height="255" rx="28" fill="#151b37"/>
+    <rect x="18" y="18" width="402" height="219" rx="18" fill="#263663"/>
+    <rect x="42" y="42" width="354" height="48" rx="14" fill="#dce2ff" fill-opacity=".22"/>
+    <text x="70" y="73" font-size="18" font-weight="700" fill="#fff">AI 营销工作台</text>
+    <rect x="42" y="110" width="102" height="100" rx="16" fill="#7a86f4"/>
+    <rect x="162" y="110" width="102" height="100" rx="16" fill="#9aa5ff"/>
+    <rect x="282" y="110" width="114" height="100" rx="16" fill="#5262dd"/>
+    <text x="93" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">选题</text>
+    <text x="213" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">图片</text>
+    <text x="339" y="168" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">视频</text>
+  </g>
 
   <text x="64" y="623" font-size="31" font-weight="800">三个公开套餐</text>
-  <text x="1016" y="621" text-anchor="end" font-size="14" class="muted">价格、积分和服务边界一次讲清</text>
+  <text x="1016" y="621" text-anchor="end" font-size="14" class="muted">价格、权益和内容产出一次讲清</text>
 
   <rect x="64" y="650" width="305" height="304" rx="22" fill="#fff" fill-opacity=".96" stroke="#d8ddef"/>
   <rect x="387" y="650" width="305" height="304" rx="22" fill="url(#personal)"/>
@@ -57,25 +75,25 @@
   <text x="88" y="696" class="name">体验包</text>
   <text x="88" y="761" class="price">¥68</text>
   <text x="190" y="761" font-size="16" class="muted">/ 30天</text>
-  <text x="88" y="808" class="credit">5,000 积分</text>
-  <text x="88" y="849" class="small muted">30 天试用期</text>
-  <text x="88" y="879" class="small muted">仅限新客 · 限购一次</text>
+  <text x="88" y="808" class="credit">约1,250张轻量图片</text>
+  <text x="88" y="849" class="small muted">或约9条10秒轻量视频</text>
+  <text x="88" y="879" class="small muted">30天体验 · 新客限购一次</text>
 
   <text x="411" y="696" class="name white">个人版</text>
   <rect x="612" y="674" width="56" height="29" rx="14.5" fill="#fff"/>
   <text x="640" y="694" text-anchor="middle" font-size="13" font-weight="700" class="blue">常用</text>
   <text x="411" y="761" class="price white">¥3,000</text>
   <text x="565" y="761" font-size="16" class="softwhite">/ 年</text>
-  <text x="411" y="808" class="credit white">200,000 积分</text>
-  <text x="411" y="849" class="small softwhite">包含 1 年软件许可证</text>
-  <text x="411" y="879" class="small softwhite">后续 ¥1=100 积分增值</text>
+  <text x="411" y="808" class="credit white">约50,000张轻量图片</text>
+  <text x="411" y="849" class="small softwhite">或约377条10秒轻量视频</text>
+  <text x="411" y="879" class="small softwhite">包含1年软件许可证</text>
 
   <text x="734" y="696" class="name">企业版</text>
   <text x="734" y="761" font-size="37" font-weight="800" letter-spacing="-2">¥30,000</text>
   <text x="910" y="761" font-size="16" class="muted">/ 年</text>
-  <text x="734" y="808" class="credit">2,700,000 积分</text>
-  <text x="734" y="849" class="small muted">赠 1 年许可证年费 + 硬件</text>
-  <text x="734" y="879" class="small muted">企业后台 · 团队协作</text>
+  <text x="734" y="808" class="credit">约675,000张轻量图片</text>
+  <text x="734" y="849" class="small muted">或约5,094条10秒轻量视频</text>
+  <text x="734" y="879" class="small muted">许可证、硬件、团队协作</text>
 
   <rect x="64" y="995" width="952" height="250" rx="22" fill="#fff" fill-opacity=".96" stroke="#dfe3f3"/>
   <line x1="382" y1="1023" x2="382" y2="1217" stroke="#e4e7f2"/>
@@ -83,13 +101,13 @@
   <text x="88" y="1042" class="small muted">一套工作流覆盖</text>
   <text x="88" y="1090" font-size="26" font-weight="800" class="blue">选题 · 图片 · 视频</text>
   <text x="88" y="1128" class="small muted">从创意到成片集中完成</text>
-  <text x="406" y="1042" class="small muted">个人版积分不足后</text>
-  <text x="406" y="1090" font-size="26" font-weight="800" class="blue">¥1 = 100积分</text>
-  <text x="406" y="1128" class="small muted">按需购买增值积分</text>
+  <text x="406" y="1042" class="small muted">轻量内容产出参考</text>
+  <text x="406" y="1090" font-size="26" font-weight="800" class="blue">图片 or 10秒视频</text>
+  <text x="406" y="1128" class="small muted">全部额度投入单一类型时估算</text>
   <text x="724" y="1042" class="small muted">企业版专享</text>
   <text x="724" y="1090" font-size="26" font-weight="800" class="blue">后台 · 协作 · 统计</text>
   <text x="724" y="1128" class="small muted">团队共享年度生产能力</text>
 
   <text x="64" y="1317" class="tiny muted">目前有且只有以上三个套餐</text>
-  <text x="1016" y="1317" text-anchor="end" class="tiny muted">价格与积分以最新购买页面及合同为准</text>
+  <text x="1016" y="1317" text-anchor="end" class="tiny muted">约可生成数量以轻量基础规格估算</text>
 </svg>

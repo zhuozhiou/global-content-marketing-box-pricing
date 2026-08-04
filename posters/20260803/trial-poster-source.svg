@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07101f"/><stop offset=".55" stop-color="#08182e"/><stop offset="1" stop-color="#0b1022"/></linearGradient>
+  <radialGradient id="glow" cx="82%" cy="11%" r="64%"><stop stop-color="#54D8FF" stop-opacity=".27"/><stop offset="1" stop-color="#54D8FF" stop-opacity="0"/></radialGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#54D8FF"/><stop offset="1" stop-color="#3974FF"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#000" flood-opacity=".35"/></filter>
+</defs>
+<rect width="1080" height="1440" fill="url(#bg)"/><rect width="1080" height="1440" fill="url(#glow)"/>
+<g opacity=".09" stroke="#FFF"><path d="M0 90H1080M0 180H1080M0 270H1080M0 360H1080M0 450H1080M0 540H1080M0 630H1080M0 720H1080M0 810H1080M0 900H1080M0 990H1080M0 1080H1080M0 1170H1080M0 1260H1080M0 1350H1080"/><path d="M90 0V1440M180 0V1440M270 0V1440M360 0V1440M450 0V1440M540 0V1440M630 0V1440M720 0V1440M810 0V1440M900 0V1440M990 0V1440"/></g>
+<g font-family="PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif">
+  <rect x="64" y="60" width="34" height="34" rx="10" fill="none" stroke="#54D8FF" stroke-width="8" transform="rotate(10 81 77)"/>
+  <text x="120" y="88" fill="#F7F8FB" font-size="28" font-weight="700">全球内容营销盒子</text>
+  <rect x="757" y="55" width="259" height="48" rx="24" fill="#54D8FF" fill-opacity=".11" stroke="#54D8FF" stroke-opacity=".6"/>
+  <text x="886" y="86" fill="#54D8FF" font-size="17" font-weight="700" text-anchor="middle">扫码即购 · 现场专享</text>
+  <line x1="64" y1="128" x2="1016" y2="128" stroke="#FFF" stroke-opacity=".16"/>
+  <text x="64" y="197" fill="#54D8FF" font-size="19" font-weight="800" letter-spacing="3">TRY FIRST · 轻松开始</text>
+  <text x="64" y="279" fill="#F7F8FB" font-size="62" font-weight="800">先跑通一次</text>
+  <text x="64" y="350" fill="#F7F8FB" font-size="62" font-weight="800">完整内容工作流</text>
+  <text x="64" y="399" fill="#BEC7D7" font-size="22">用 30 天验证选题、脚本、图片与视频的真实生产效率。</text>
+  <text x="64" y="540" fill="#FFF" font-size="104" font-weight="800">¥68</text>
+  <text x="415" y="530" fill="#54D8FF" font-size="25" font-weight="700">30天体验包</text>
+  <rect x="64" y="590" width="952" height="404" rx="32" fill="#09172B" fill-opacity=".88" stroke="#54D8FF" stroke-opacity=".42" filter="url(#shadow)"/>
+  <text x="102" y="654" fill="#F7F8FB" font-size="28" font-weight="800">套餐包含什么</text>
+  <text x="102" y="692" fill="#AEB8CB" font-size="17">以下产出均按全部额度只用于一种轻量内容估算</text>
+  <rect x="102" y="730" width="424" height="152" rx="22" fill="#FFF" fill-opacity=".07" stroke="#FFF" stroke-opacity=".10"/>
+  <text x="132" y="796" fill="#54D8FF" font-size="36" font-weight="800">约 1,250 张</text>
+  <text x="132" y="838" fill="#CFD6E3" font-size="20">轻量图片 · 全部额度投入图片</text>
+  <rect x="554" y="730" width="424" height="152" rx="22" fill="#FFF" fill-opacity=".07" stroke="#FFF" stroke-opacity=".10"/>
+  <text x="584" y="796" fill="#54D8FF" font-size="36" font-weight="800">约 9 条</text>
+  <text x="584" y="838" fill="#CFD6E3" font-size="20">10秒轻量视频 · 全部额度投入视频</text>
+  <line x1="102" y1="914" x2="978" y2="914" stroke="#FFF" stroke-opacity=".13"/>
+  <text x="102" y="956" fill="#54D8FF" font-size="21" font-weight="800">5,000 平台积分</text>
+  <text x="102" y="984" fill="#DFE4EF" font-size="18">选题 · 脚本 · 图片 · 视频</text>
+  <rect x="64" y="1042" width="703" height="244" rx="30" fill="#FFF" fill-opacity=".04" stroke="#FFF" stroke-opacity=".12"/>
+  <text x="104" y="1100" fill="#54D8FF" font-size="18" font-weight="800" letter-spacing="2">立即开始</text>
+  <text x="104" y="1160" fill="#F7F8FB" font-size="35" font-weight="800">感兴趣，就先买一份试试</text>
+  <text x="104" y="1210" fill="#BFC8D8" font-size="19">低门槛开始，用一次真实业务验证效果。</text>
+  <rect x="801" y="1042" width="215" height="215" rx="26" fill="#FFF" stroke="#54D8FF" stroke-width="3" stroke-dasharray="9 7"/>
+  <g fill="#3974FF" opacity=".8"><rect x="836" y="1077" width="22" height="22"/><rect x="872" y="1077" width="16" height="16"/><rect x="916" y="1077" width="30" height="30"/><rect x="836" y="1115" width="15" height="15"/><rect x="875" y="1113" width="27" height="27"/><rect x="922" y="1126" width="17" height="17"/><rect x="838" y="1157" width="32" height="32"/><rect x="890" y="1160" width="16" height="16"/><rect x="925" y="1165" width="24" height="24"/></g>
+  <text x="908" y="1221" fill="#18223A" font-size="17" font-weight="800" text-anchor="middle">购买二维码</text>
+  <text x="908" y="1244" fill="#64708A" font-size="13" text-anchor="middle">后续嵌入</text>
+  <rect x="64" y="1320" width="952" height="1" fill="#FFF" fill-opacity=".16"/>
+  <text x="64" y="1366" fill="#54D8FF" font-size="20" font-weight="800">30天完整体验</text>
+  <text x="1016" y="1366" fill="#B8C2D4" font-size="17" text-anchor="end">新客限购一次</text>
+  <text x="64" y="1406" fill="#8E99AD" font-size="13">约可生成数量按轻量基础规格估算；混用或选择更高规格时数量会相应变化</text>
+</g></svg>
